@@ -1,9 +1,194 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Test of Hypothesis II"
+author: "AbdulHafiz Abba"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# INTRODUCTION TO HYPOTHESIS TESTING
+
+## Basic Terms
+
+The first step in hypothesis testing is to set up two competing hypotheses. The hypotheses are the most important aspect. If the hypotheses are incorrect, your conclusion will also be incorrect.
+
+The two hypotheses are named the null hypothesis and the alternative hypothesis.
+
+### Null hypothesis
+
+The null hypothesis is typically denoted as \( H_0 \). The null hypothesis states the "status quo". This hypothesis is assumed to be true until there is evidence to suggest otherwise.
+
+### Alternative hypothesis
+
+The alternative hypothesis is typically denoted as \( H_a \) or \( H_1 \). This is the statement that one wants to conclude. It is also called the research hypothesis.
+
+The goal of hypothesis testing is to see if there is enough evidence against the null hypothesis. In other words, to see if there is enough evidence to reject the null hypothesis. If there is not enough evidence, then we fail to reject the null hypothesis.
+
+Consider the following example where we set up these hypotheses.
+
+**Example 1**
+
+A man, Mr. Orange juice, goes to trial and is tried for the murder of his ex-wife. He is either guilty or innocent. Set up the null and alternative hypotheses for this example.
+
+**Answer**
+
+Putting this in a hypothesis testing framework, the hypotheses being tested are:
+
+- The man is guilty
+- The man is innocent
+
+Let's set up the null and alternative hypotheses.
+
+\(H_0: \text{Mr. Orangejuice is innocent} \)
+
+\( H_a: \text{Mr. Orangejuice is guilty} \)
+
+Remember that we assume the null hypothesis is true and try to see if we have evidence against the null. Therefore, it makes sense in this example to assume the man is innocent and test to see if there is evidence that he is guilty.
+
+## The Logic of Hypothesis Testing
+
+We want to know the answer to a research question. We determine our null and alternative hypotheses. Now it is time to make a decision.
+
+The decision is either going to be...
+
+- reject the null hypothesis or...
+- fail to reject the null hypothesis.
+
+**Note!** Why can’t we say we “accept the null”? The reason is that we are assuming the null hypothesis is true and trying to see if there is evidence against it. Therefore, the conclusion should be in terms of rejecting the null.
+
+Consider the following table. The table shows the decision/conclusion of the hypothesis test and the unknown "reality", or truth. We do not know if the null is true or if it is false. If the null is false and we reject it, then we made the correct decision. If the null hypothesis is true and we fail to reject it, then we made the correct decision.
+
+\[
+\begin{array}{cc}
+
+\textbf{Decision} & \textbf{Reality} & {} \\
+\hline 
+ & H_0 \ is \  true & H_0 \ is \ false\\
+\hline
+Reject \ H_0, (conclude \ a) & Type \ I\  error & Correct \ decision \\
+Fail \ to \ reject \ H_0 & Correct \ decision & Type \ II \ error\\
+
+\hline
+
+\end{array}
+\]
+
+
+So what happens when we do not make the correct decision?
+
+When doing hypothesis testing, two types of mistakes may be made and we call them Type I error and Type II error. If we reject the null hypothesis when it is true, then we made a type I error. If the null hypothesis is false and we failed to reject it, we made another error called a Type II error.
+
+\[
+\begin{array}{cc}
+
+\textbf{Decision} & \textbf{Reality} & {} \\
+\hline 
+ & H_0 \ is \  true & H_0 \ is \ false\\
+\hline
+Reject \ H_0, (conclude \ a) & \text{Reject "building is not safe" when it is not safe }(Type \ I\  error)  & Correct \ decision \\
+Fail \ to \ reject \ H_0 & Correct \ decision & \text{Failing to reject 'building not is safe' when it is safe} (Type \ II \ error)\\
+
+\hline
+
+\end{array}
+\]
+
+
+### Types of errors
+
+-  **Type I error**: When we reject the null hypothesis when the null hypothesis is true.
+
+-  **Type II error**: When we fail to reject the null hypothesis when the null hypothesis is false.
+
+The “reality”, or truth, about the null hypothesis is unknown and therefore we do not know if we have made the correct decision or if we committed an error. We can, however, define the likelihood of these events.
+
+-  **α ('Alpha')**: The probability of committing a Type I error. Also known as the significance level.
+
+-  **β ('Beta')**: The probability of committing a Type II error.
+
+-  **Power**: Power is the probability the null hypothesis is rejected given that it is false (i.e., \(1- \beta \)).
+
+\( \alpha \) and \( \beta \) are probabilities of committing an error so we want these values to be low. However, we cannot decrease both. As \( \alpha \) decreases, \( \beta \) increases.
+
+**Note!** Type I error is also thought of as the event that we reject the null hypothesis GIVEN the null is true. In other words, Type I error is a conditional event and \( \alpha \) is a conditional probability. The same idea applies to Type II error and \( \beta \).
+
+**Example 1 Cont'd...**
+
+A man, Mr. Orangejuice, goes to trial and is tried for the murder of his ex-wife. He is either guilty or not guilty. We found before that...
+
+\(
+    H_0: \text{Mr. Orangejuice is innocent}
+\)
+
+\(
+    H_a: \text{Mr. Orangejuice is guilty}
+\)
+
+\textbf{Interpret Type I error, $\alpha$, Type II error, $\beta$.}
+
+\textbf{Answer}
+
+\textbf{Type I Error:} Type I error is committed if we reject \( H_0 \) when it is true. In other words, when the man is innocent but found guilty.
+
+\(\alpha\): \(\alpha\) is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.
+
+\textbf{Type II Error:} Type II error is committed if we fail to reject \( H_0 \) when it is false. In other words, when the man is guilty but found not guilty.
+
+\(\beta\): \(\beta\) is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.
+
+As you can see here, the Type I error (putting an innocent man in jail) is the more serious error. Ethically, it is more serious to put an innocent man in jail than to let a guilty man go free. So to minimize the probability of a type I error we would choose a smaller significance level.
+
+\textbf{Exercise}
+
+An inspector has to choose between certifying a building as safe or saying that the building is not safe. There are two hypotheses:
+
+\begin{itemize}
+    \item Building is safe
+    \item Building is not safe
+\end{itemize}
+
+\textbf{Set up the null and alternative hypotheses. Interpret Type I and Type II error.}
+
+\textbf{Answer}
+
+\[ H_0: \text{Building is not safe} \quad \text{vs} \quad H_a: \text{Building is safe} \]
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Decision} & \textbf{Reality} \\
+\hline
+\( H_0 \) is true & \( H_0 \) is false \\
+\hline
+Reject \( H_0 \), (conclude \( H_a \)) & Reject "building is not safe" when it is not safe (Type I Error) & Correct decision \\
+Fail to reject \( H_0 \) & Correct decision & Failing to reject 'building not is safe' when it is safe (Type II Error) \\
+\hline
+\end{tabular}
+\end{center}
+
+Power and \( \beta \) are complements of each other. Therefore, they have an inverse relationship, i.e., as one increases, the other decreases.
+
+It makes sense for us to set up the \( H_0 \) and \( H_a \) as above (that is, assume building is not safe until proven otherwise), because if we switch \( H_0 \) and \( H_a \) (that is, if \( H_0 \) was building is safe and \( H_a \) is building is not safe) and if we fail to reject \( H_0 \), we cannot quite conclude that building is safe (we can only fail to reject \( H_0 \), we cannot accept \( H_0 \)).
+
+
+A hypothesis, in statistics, is a statement about a population parameter, where this statement typically is represented by some specific numerical value. In testing a hypothesis, we use a method where we gather data in an effort to gather evidence about the hypothesis.
+
+How do we decide whether to reject the null hypothesis?
+
+\begin{itemize}
+    \item If the sample data are dependable with the null hypothesis, then we do not reject it.
+    \item If the sample data are inconsistent with the null hypothesis, but consistent with the alternative, then we reject the null hypothesis and conclude that the alternative hypothesis is true.
+\end{itemize}
+
+\textbf{Six Steps for Hypothesis Tests}
+
+In hypothesis testing, there are certain steps one must follow. Below these are summarized into six such steps to conducting a test of a hypothesis.
+
+\begin{enumerate}
+    \item Set up the hypotheses and check conditions: Each hypothesis test includes two hypotheses about the population. One is the null hypothesis, notated as \( H_0 \), which is a statement of a particular parameter value. This hypothesis is assumed to be true until there is evidence to suggest otherwise. The second hypothesis is called the alternative, or research hypothesis, notated as \( H_a \). The alternative hypothesis is a statement of a range of alternative values in which the parameter may fall. One must also check that any conditions (assumptions) needed to run the test have been satisfied e.g. normality of data, independence, and number of success and failure outcomes.
+    \item Decide on the significance level, \( \alpha \): This value is used as a probability cutoff for making decisions about the null hypothesis. This alpha value represents the probability we are willing to place on our test for making an incorrect decision in regards to rejecting the null hypothesis. The most common \( \alpha \) value is 0.05 or 5\%. Other popular choices are 0.01 (1\%) and 0.1 (10\%).
+    \item Calculate the test statistic: Gather sample data and calculate a test statistic where the sample statistic is compared to the parameter value. The test statistic is calculated under the assumption the null hypothesis is true and incorporates a measure of standard error and assumptions (conditions) related to the sampling distribution.
+    \item Calculate probability value (p-value), or find the rejection region: A p-value is found by using the test statistic to calculate the probability of the sample data producing such a test statistic or one more extreme. The rejection region is found by using alpha to find a critical value; the rejection region is the area that is more extreme than the critical value. We discuss the p-value and rejection region in more detail in the next section.
+    \item Make a decision about the null hypothesis: In this step, we decide to either reject the null hypothesis or decide to fail to reject the null hypothesis. Notice we do not make a decision where we will accept the null hypothesis.
+    \item State an overall conclusion: Once we have found the p-value or rejection region, and made a statistical decision about the null hypothesis (i.e. we will reject the null or fail to reject the null), we then want to summarize our results into an overall conclusion for our test.
+\end{enumerate}
 

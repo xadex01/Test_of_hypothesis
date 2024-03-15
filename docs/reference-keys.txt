@@ -1,0 +1,8 @@
+introduction-to-hypothesis-testing
+basic-terms
+null-hypothesis
+alternative-hypothesis
+the-logic-of-hypothesis-testing
+types-of-errors
+the-pool-of-tears
+a-caucus-race-and-a-long-tale

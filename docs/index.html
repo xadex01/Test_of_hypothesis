@@ -4,27 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>YOUR TITLE HERE</title>
-  <meta name="description" content="YOUR TITLE HERE" />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <title>Test of Hypothesis II</title>
+  <meta name="description" content="Test of Hypothesis II" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="YOUR TITLE HERE" />
+  <meta property="og:title" content="Test of Hypothesis II" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="YOUR TITLE HERE" />
+  <meta name="twitter:title" content="Test of Hypothesis II" />
   
   
   
 
-<meta name="author" content="YOUR NAME HERE" />
+<meta name="author" content="AbdulHafiz Abba" />
 
 
-<meta name="date" content="2020-08-10" />
+<meta name="date" content="2024-03-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,8 @@
   
 
 <link rel="next" href="the-pool-of-tears.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +49,16 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -66,10 +73,21 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">SHORT TITLE HERE</a></li>
+<li><a href="./">Test of Hypothesis</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Down the rabbit-hole</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUCTION TO HYPOTHESIS TESTING</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#basic-terms"><i class="fa fa-check"></i><b>1.1</b> Basic Terms</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#null-hypothesis"><i class="fa fa-check"></i><b>1.1.1</b> Null hypothesis</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#alternative-hypothesis"><i class="fa fa-check"></i><b>1.1.2</b> Alternative hypothesis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing"><i class="fa fa-check"></i><b>1.2</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#types-of-errors"><i class="fa fa-check"></i><b>1.2.1</b> Types of errors</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
 <li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
 <li class="divider"></li>
@@ -83,7 +101,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">YOUR TITLE HERE</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Test of Hypothesis II</a>
           </h1>
         </div>
 
@@ -92,13 +110,118 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">YOUR TITLE HERE</h1>
-<p class="author"><em>YOUR NAME HERE</em></p>
-<p class="date"><em>2020-08-10</em></p>
+<h1 class="title">Test of Hypothesis II</h1>
+<p class="author"><em>AbdulHafiz Abba</em></p>
+<p class="date"><em>2024-03-15</em></p>
 </div>
-<div id="down-the-rabbit-hole" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Down the rabbit-hole</h1>
+<div id="introduction-to-hypothesis-testing" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> INTRODUCTION TO HYPOTHESIS TESTING<a href="index.html#introduction-to-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="basic-terms" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Basic Terms<a href="index.html#basic-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The first step in hypothesis testing is to set up two competing hypotheses. The hypotheses are the most important aspect. If the hypotheses are incorrect, your conclusion will also be incorrect.</p>
+<p>The two hypotheses are named the null hypothesis and the alternative hypothesis.</p>
+<div id="null-hypothesis" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Null hypothesis<a href="index.html#null-hypothesis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The null hypothesis is typically denoted as <span class="math inline">\(H_0\)</span>. The null hypothesis states the “status quo”. This hypothesis is assumed to be true until there is evidence to suggest otherwise.</p>
+</div>
+<div id="alternative-hypothesis" class="section level3 hasAnchor" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Alternative hypothesis<a href="index.html#alternative-hypothesis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The alternative hypothesis is typically denoted as <span class="math inline">\(H_a\)</span> or <span class="math inline">\(H_1\)</span>. This is the statement that one wants to conclude. It is also called the research hypothesis.</p>
+<p>The goal of hypothesis testing is to see if there is enough evidence against the null hypothesis. In other words, to see if there is enough evidence to reject the null hypothesis. If there is not enough evidence, then we fail to reject the null hypothesis.</p>
+<p>Consider the following example where we set up these hypotheses.</p>
+<p><strong>Example 1</strong></p>
+<p>A man, Mr. Orange juice, goes to trial and is tried for the murder of his ex-wife. He is either guilty or innocent. Set up the null and alternative hypotheses for this example.</p>
+<p><strong>Answer</strong></p>
+<p>Putting this in a hypothesis testing framework, the hypotheses being tested are:</p>
+<ul>
+<li>The man is guilty</li>
+<li>The man is innocent</li>
+</ul>
+<p>Let’s set up the null and alternative hypotheses.</p>
+<p><span class="math inline">\(H_0: \text{Mr. Orangejuice is innocent}\)</span></p>
+<p><span class="math inline">\(H_a: \text{Mr. Orangejuice is guilty}\)</span></p>
+<p>Remember that we assume the null hypothesis is true and try to see if we have evidence against the null. Therefore, it makes sense in this example to assume the man is innocent and test to see if there is evidence that he is guilty.</p>
+</div>
+</div>
+<div id="the-logic-of-hypothesis-testing" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> The Logic of Hypothesis Testing<a href="index.html#the-logic-of-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We want to know the answer to a research question. We determine our null and alternative hypotheses. Now it is time to make a decision.</p>
+<p>The decision is either going to be…</p>
+<ul>
+<li>reject the null hypothesis or…</li>
+<li>fail to reject the null hypothesis.</li>
+</ul>
+<p><strong>Note!</strong> Why can’t we say we “accept the null”? The reason is that we are assuming the null hypothesis is true and trying to see if there is evidence against it. Therefore, the conclusion should be in terms of rejecting the null.</p>
+<p>Consider the following table. The table shows the decision/conclusion of the hypothesis test and the unknown “reality”, or truth. We do not know if the null is true or if it is false. If the null is false and we reject it, then we made the correct decision. If the null hypothesis is true and we fail to reject it, then we made the correct decision.</p>
+[
+<span class="math display">\[\begin{array}{cc}
 
+\textbf{Decision} &amp; \textbf{Reality} &amp; {} \\
+\hline
+&amp; H_0 \ is \  true &amp; H_0 \ is \ false\\
+\hline
+Reject \ H_0, (conclude \ a) &amp; Type \ I\  error &amp; Correct \ decision \\
+Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; Type \ II \ error\\
+
+\hline
+
+\end{array}\]</span>
+<p>]</p>
+<p>So what happens when we do not make the correct decision?</p>
+<p>When doing hypothesis testing, two types of mistakes may be made and we call them Type I error and Type II error. If we reject the null hypothesis when it is true, then we made a type I error. If the null hypothesis is false and we failed to reject it, we made another error called a Type II error.</p>
+[
+<span class="math display">\[\begin{array}{cc}
+
+\textbf{Decision} &amp; \textbf{Reality} &amp; {} \\
+\hline
+&amp; H_0 \ is \  true &amp; H_0 \ is \ false\\
+\hline
+Reject \ H_0, (conclude \ a) &amp; \text{Reject &quot;building is not safe&quot; when it is not safe }(Type \ I\  error)  &amp; Correct \ decision \\
+Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject &#39;building not is safe&#39; when it is safe} (Type \ II \ error)\\
+
+\hline
+
+\end{array}\]</span>
+<p>]</p>
+<div id="types-of-errors" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Types of errors<a href="index.html#types-of-errors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p><strong>Type I error</strong>: When we reject the null hypothesis when the null hypothesis is true.</p></li>
+<li><p><strong>Type II error</strong>: When we fail to reject the null hypothesis when the null hypothesis is false.</p></li>
+</ul>
+<p>The “reality”, or truth, about the null hypothesis is unknown and therefore we do not know if we have made the correct decision or if we committed an error. We can, however, define the likelihood of these events.</p>
+<ul>
+<li><p><strong>α (‘Alpha’)</strong>: The probability of committing a Type I error. Also known as the significance level.</p></li>
+<li><p><strong>β (‘Beta’)</strong>: The probability of committing a Type II error.</p></li>
+<li><p><strong>Power</strong>: Power is the probability the null hypothesis is rejected given that it is false (i.e., <span class="math inline">\(1- \beta\)</span>).</p></li>
+</ul>
+<p><span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are probabilities of committing an error so we want these values to be low. However, we cannot decrease both. As <span class="math inline">\(\alpha\)</span> decreases, <span class="math inline">\(\beta\)</span> increases.</p>
+<p><strong>Note!</strong> Type I error is also thought of as the event that we reject the null hypothesis GIVEN the null is true. In other words, Type I error is a conditional event and <span class="math inline">\(\alpha\)</span> is a conditional probability. The same idea applies to Type II error and <span class="math inline">\(\beta\)</span>.</p>
+<p><strong>Example 1 Cont’d…</strong></p>
+<p>A man, Mr. Orangejuice, goes to trial and is tried for the murder of his ex-wife. He is either guilty or not guilty. We found before that…</p>
+<p><span class="math inline">\(H_0: \text{Mr. Orangejuice is innocent}\)</span></p>
+<p><span class="math inline">\(H_a: \text{Mr. Orangejuice is guilty}\)</span></p>
+<p></p>
+<p></p>
+<p> Type I error is committed if we reject <span class="math inline">\(H_0\)</span> when it is true. In other words, when the man is innocent but found guilty.</p>
+<p><span class="math inline">\(\alpha\)</span>: <span class="math inline">\(\alpha\)</span> is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.</p>
+<p> Type II error is committed if we fail to reject <span class="math inline">\(H_0\)</span> when it is false. In other words, when the man is guilty but found not guilty.</p>
+<p><span class="math inline">\(\beta\)</span>: <span class="math inline">\(\beta\)</span> is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.</p>
+<p>As you can see here, the Type I error (putting an innocent man in jail) is the more serious error. Ethically, it is more serious to put an innocent man in jail than to let a guilty man go free. So to minimize the probability of a type I error we would choose a smaller significance level.</p>
+<p></p>
+<p>An inspector has to choose between certifying a building as safe or saying that the building is not safe. There are two hypotheses:</p>
+<p></p>
+<p></p>
+<p><span class="math display">\[ H_0: \text{Building is not safe} \quad \text{vs} \quad H_a: \text{Building is safe} \]</span></p>
+<p>Power and <span class="math inline">\(\beta\)</span> are complements of each other. Therefore, they have an inverse relationship, i.e., as one increases, the other decreases.</p>
+<p>It makes sense for us to set up the <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_a\)</span> as above (that is, assume building is not safe until proven otherwise), because if we switch <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_a\)</span> (that is, if <span class="math inline">\(H_0\)</span> was building is safe and <span class="math inline">\(H_a\)</span> is building is not safe) and if we fail to reject <span class="math inline">\(H_0\)</span>, we cannot quite conclude that building is safe (we can only fail to reject <span class="math inline">\(H_0\)</span>, we cannot accept <span class="math inline">\(H_0\)</span>).</p>
+<p>A hypothesis, in statistics, is a statement about a population parameter, where this statement typically is represented by some specific numerical value. In testing a hypothesis, we use a method where we gather data in an effort to gather evidence about the hypothesis.</p>
+<p>How do we decide whether to reject the null hypothesis?</p>
+<p></p>
+<p>In hypothesis testing, there are certain steps one must follow. Below these are summarized into six such steps to conducting a test of a hypothesis.</p>
+
+</div>
+</div>
 </div>
             </section>
 
@@ -110,7 +233,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -129,6 +251,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -137,7 +260,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/index.Rmd",
+"link": "https://github.com/xadex01/Test_of_hypothesis/edit/main/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -145,10 +268,14 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/index.Rmd",
+"link": "https://github.com/xadex01/Test_of_hypothesis/blob/main/index.Rmd",
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -156,6 +283,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
