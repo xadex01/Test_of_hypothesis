@@ -57,7 +57,7 @@ The decision is either going to be...
 
 Consider the following table. The table shows the decision/conclusion of the hypothesis test and the unknown "reality", or truth. We do not know if the null is true or if it is false. If the null is false and we reject it, then we made the correct decision. If the null hypothesis is true and we fail to reject it, then we made the correct decision.
 
-\[
+
 \begin{array}{cc}
 
 \textbf{Decision} & \textbf{Reality} & {} \\
@@ -70,27 +70,26 @@ Fail \ to \ reject \ H_0 & Correct \ decision & Type \ II \ error\\
 \hline
 
 \end{array}
-\]
+
 
 
 So what happens when we do not make the correct decision?
 
 When doing hypothesis testing, two types of mistakes may be made and we call them Type I error and Type II error. If we reject the null hypothesis when it is true, then we made a type I error. If the null hypothesis is false and we failed to reject it, we made another error called a Type II error.
 
-\[
+
 \begin{array}{cc}
 
 \textbf{Decision} & \textbf{Reality} & {} \\
 \hline 
  & H_0 \ is \  true & H_0 \ is \ false\\
 \hline
-Reject \ H_0, (conclude \ a) & \text{Reject "building is not safe" when it is not safe }(Type \ I\  error)  & Correct \ decision \\
-Fail \ to \ reject \ H_0 & Correct \ decision & \text{Failing to reject 'building not is safe' when it is safe} (Type \ II \ error)\\
-
-\hline
-
+Reject \ H_0, (conclude \ a) & \text{Reject "building is not safe"} \ decision \\
+&\text{ when it is not safe }(Type \ I\  error)  & Correct\\
+Fail \ to \ reject \ H_0 & Correct \ decision & \text{Failing to reject 'building not is safe'}\\
+&&\text{when it is safe} (Type \ II \ error)\\
 \end{array}
-\]
+
 
 
 ### Types of errors
@@ -123,72 +122,234 @@ A man, Mr. Orangejuice, goes to trial and is tried for the murder of his ex-wife
     H_a: \text{Mr. Orangejuice is guilty}
 \)
 
-\textbf{Interpret Type I error, $\alpha$, Type II error, $\beta$.}
+Interpret Type I error, $\alpha$, Type II error, $\beta$.
 
-\textbf{Answer}
+**Answer**
 
-\textbf{Type I Error:} Type I error is committed if we reject \( H_0 \) when it is true. In other words, when the man is innocent but found guilty.
+**Type I Error:** Type I error is committed if we reject \( H_0 \) when it is true. In other words, when the man is innocent but found guilty.
 
-\(\alpha\): \(\alpha\) is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.
+\(\alpha\): is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.
 
-\textbf{Type II Error:} Type II error is committed if we fail to reject \( H_0 \) when it is false. In other words, when the man is guilty but found not guilty.
+**Type II Error:** Type II error is committed if we fail to reject \( H_0 \) when it is false. In other words, when the man is guilty but found not guilty.
 
-\(\beta\): \(\beta\) is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.
+\(\beta\): is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.
+
+\hline
 
 As you can see here, the Type I error (putting an innocent man in jail) is the more serious error. Ethically, it is more serious to put an innocent man in jail than to let a guilty man go free. So to minimize the probability of a type I error we would choose a smaller significance level.
 
-\textbf{Exercise}
 
-An inspector has to choose between certifying a building as safe or saying that the building is not safe. There are two hypotheses:
-
-\begin{itemize}
-    \item Building is safe
-    \item Building is not safe
-\end{itemize}
-
-\textbf{Set up the null and alternative hypotheses. Interpret Type I and Type II error.}
-
-\textbf{Answer}
-
-\[ H_0: \text{Building is not safe} \quad \text{vs} \quad H_a: \text{Building is safe} \]
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Decision} & \textbf{Reality} \\
-\hline
-\( H_0 \) is true & \( H_0 \) is false \\
-\hline
-Reject \( H_0 \), (conclude \( H_a \)) & Reject "building is not safe" when it is not safe (Type I Error) & Correct decision \\
-Fail to reject \( H_0 \) & Correct decision & Failing to reject 'building not is safe' when it is safe (Type II Error) \\
-\hline
-\end{tabular}
-\end{center}
-
-Power and \( \beta \) are complements of each other. Therefore, they have an inverse relationship, i.e., as one increases, the other decreases.
-
-It makes sense for us to set up the \( H_0 \) and \( H_a \) as above (that is, assume building is not safe until proven otherwise), because if we switch \( H_0 \) and \( H_a \) (that is, if \( H_0 \) was building is safe and \( H_a \) is building is not safe) and if we fail to reject \( H_0 \), we cannot quite conclude that building is safe (we can only fail to reject \( H_0 \), we cannot accept \( H_0 \)).
-
+## The Logic of Hypothesis Testing
 
 A hypothesis, in statistics, is a statement about a population parameter, where this statement typically is represented by some specific numerical value. In testing a hypothesis, we use a method where we gather data in an effort to gather evidence about the hypothesis.
 
 How do we decide whether to reject the null hypothesis?
 
-\begin{itemize}
-    \item If the sample data are dependable with the null hypothesis, then we do not reject it.
-    \item If the sample data are inconsistent with the null hypothesis, but consistent with the alternative, then we reject the null hypothesis and conclude that the alternative hypothesis is true.
-\end{itemize}
+-	If the sample data are dependable with the null hypothesis, then we do not reject it.
+-	If the sample data are inconsistent with the null hypothesis, but consistent with the alternative, then we reject the null hypothesis and conclude that the alternative hypothesis is true.
 
-\textbf{Six Steps for Hypothesis Tests}
+
+
+**Six Steps for Hypothesis Tests**
 
 In hypothesis testing, there are certain steps one must follow. Below these are summarized into six such steps to conducting a test of a hypothesis.
 
-\begin{enumerate}
-    \item Set up the hypotheses and check conditions: Each hypothesis test includes two hypotheses about the population. One is the null hypothesis, notated as \( H_0 \), which is a statement of a particular parameter value. This hypothesis is assumed to be true until there is evidence to suggest otherwise. The second hypothesis is called the alternative, or research hypothesis, notated as \( H_a \). The alternative hypothesis is a statement of a range of alternative values in which the parameter may fall. One must also check that any conditions (assumptions) needed to run the test have been satisfied e.g. normality of data, independence, and number of success and failure outcomes.
-    \item Decide on the significance level, \( \alpha \): This value is used as a probability cutoff for making decisions about the null hypothesis. This alpha value represents the probability we are willing to place on our test for making an incorrect decision in regards to rejecting the null hypothesis. The most common \( \alpha \) value is 0.05 or 5\%. Other popular choices are 0.01 (1\%) and 0.1 (10\%).
-    \item Calculate the test statistic: Gather sample data and calculate a test statistic where the sample statistic is compared to the parameter value. The test statistic is calculated under the assumption the null hypothesis is true and incorporates a measure of standard error and assumptions (conditions) related to the sampling distribution.
-    \item Calculate probability value (p-value), or find the rejection region: A p-value is found by using the test statistic to calculate the probability of the sample data producing such a test statistic or one more extreme. The rejection region is found by using alpha to find a critical value; the rejection region is the area that is more extreme than the critical value. We discuss the p-value and rejection region in more detail in the next section.
-    \item Make a decision about the null hypothesis: In this step, we decide to either reject the null hypothesis or decide to fail to reject the null hypothesis. Notice we do not make a decision where we will accept the null hypothesis.
-    \item State an overall conclusion: Once we have found the p-value or rejection region, and made a statistical decision about the null hypothesis (i.e. we will reject the null or fail to reject the null), we then want to summarize our results into an overall conclusion for our test.
-\end{enumerate}
+-  **Set up the hypotheses and check conditions:** Each hypothesis test includes two hypotheses about the population. One is the null hypothesis, notated as \( H_0 \), which is a statement of a particular parameter value. This hypothesis is assumed to be true until there is evidence to suggest otherwise. The second hypothesis is called the alternative, or research hypothesis, notated as \( H_a \). The alternative hypothesis is a statement of a range of alternative values in which the parameter may fall. One must also check that any conditions (assumptions) needed to run the test have been satisfied e.g. normality of data, independence, and number of success and failure outcomes.
+
+-  **Decide on the significance level, \( \alpha \):** This value is used as a probability cutoff for making decisions about the null hypothesis. This alpha value represents the probability we are willing to place on our test for making an incorrect decision in regards to rejecting the null hypothesis. The most common \( \alpha \) value is 0.05 or 5\%. Other popular choices are 0.01 (1\%) and 0.1 (10\%).
+
+-  **Calculate the test statistic:** Gather sample data and calculate a test statistic where the sample statistic is compared to the parameter value. The test statistic is calculated under the assumption the null hypothesis is true and incorporates a measure of standard error and assumptions (conditions) related to the sampling distribution.
+
+-  **Calculate probability value (p-value), or find the rejection region:** A p-value is found by using the test statistic to calculate the probability of the sample data producing such a test statistic or one more extreme. The rejection region is found by using alpha to find a critical value; the rejection region is the area that is more extreme than the critical value. We discuss the p-value and rejection region in more detail in the next section.
+
+-  **Make a decision about the null hypothesis:** In this step, we decide to either reject the null hypothesis or decide to fail to reject the null hypothesis. Notice we do not make a decision where we will accept the null hypothesis.
+
+-  **State an overall conclusion:** Once we have found the p-value or rejection region, and made a statistical decision about the null hypothesis (i.e. we will reject the null or fail to reject the null), we then want to summarize our results into an overall conclusion for our test.
+
+### Set-Up for One-Sample Hypotheses
+
+We will continue our discussion by considering two specific hypothesis tests: a test of one proportion, and a test of one mean. We will provide the general set up of the hypothesis and the test statistics for both tests. From there, we will branch off into specific discussions on each of these tests.
+
+In order to make a judgment about the value of a parameter, the problem can be set up as a hypothesis testing problem. We usually set the hypothesis that one wants to conclude as the alternative hypothesis, also called the research hypothesis.
+
+Since hypothesis tests are about a parameter value, the hypotheses use parameter notation - p for proportion or μ for mean - in their arrangement. For tests of a proportion or a test of a mean, we would choose the appropriate alternative based on our research question.
+
+Below are the possible hypotheses from which we would select only one of them based on the research question. The symbols p_0 and μ_0 are used in these general statements and in practice, get replaced by the parameter value, or constant, being tested.
+\[
+\begin{array}{cccc}
+\textbf{Research Question} &	\text{Is the population proportion} 	& \text{Is the population proportion}	& \text{Is the population proportion} \\
+&\text{different from  }p_0? & \text{ greater than }p_0? & \text{ less than }p_0?\\
+\text{Null Hypothesis, }H_0 &	p = p_0 &	p = p_0 &	p = p_0 \\
+\text{Alternative Hypothesis, } H_a	& p ≠ p_0	& p >p_0 &	p <p_0 \\
+\text{Type of Hypothesis Test} &	Two-tailed, non-directional	& Right-tailed, directional	& Left-tailed, directional \\
+\hline
+*p_0 \text{ is the hypothesized population proportion}\\
+\end{array}
+\]
+
+
+**One Sample Mean**
+
+| Research Question                                | Null Hypothesis, \(H_0\) | Alternative Hypothesis, \(H_a\) | Type of Hypothesis Test      |
+|--------------------------------------------------|----------------------|-----------------------------|-------------------------------|
+| Is the population mean different from \( \mu_0 \)? | \( \mu = \mu_0 \)     | \( \mu \neq \mu_0 \)        | Two-tailed, non-directional  |
+| Is the population mean greater than \( \mu_0 \)?   | \( \mu = \mu_0 \)     | \( \mu > \mu_0 \)           | Right-tailed, directional    |
+| Is the population mean less than \( \mu_0 \)?      | \( \mu = \mu_0 \)     | \( \mu < \mu_0 \)           | Left-tailed, directional     |
+
+
+The most important step in hypothesis testing is choosing the correct parameter of interest and correctly setting up the alternative hypothesis. 
+
+
+Step 1 is a very important step to set up correctly. If your hypotheses are incorrect, your conclusion will be incorrect. In this next section, we practice with Step 1 for the one sample situations.
+
+**Example: Null and Alternative Hypotheses**
+
+In each of the following scenarios, determine the parameter of interest and the null and alternative hypotheses.
+
+a.  When debating the State appropriation for Bauchi State, the following question is asked: "Are the majority of students at Gadau State Univerity from Bauchi State?"
+
+  **Answer:** 
+  
+The response variable is 'State' and is a qualitative variable. Therefore, the parameter of interest would be \( p \), the population proportion of students from Bauchi. The hypotheses should be in terms of \( p \). The value we are testing is the “majority” (50%) or \( p_0 = 0.5 \). The majority also implies greater than 50%. Thus, the hypothesis set up would be a right-tailed test.
+
+  \( H_0: p = 0.5 \) vs. \( H_a: p > 0.5 \)
+
+
+b.  A consumer test agency wants to see whether the mean lifetime of a brand of tires is less than 42,000 miles. The tire manufacturer advertises that the average lifetime is at least 42,000 miles.
+
+  **Answer:** 
+
+The response variable here is 'lifetime' and is a quantitative variable. Therefore, set up the hypotheses in terms of \( \mu \). Here the value of \( \mu_0 \) is 42,000. With the consumer test agency wanting to research that the mean lifetime is below 42,000, we would set up the hypotheses as a left-tailed test:
+
+  \( H_0: \mu = 42000 \) vs. \( H_a: \mu < 42000 \)
+
+c. The length of a certain lumber from a national home building store is supposed to be 8.5 feet. A builder wants to check whether the shipment of lumber she receives has a mean length different from 8.5 feet.
+
+**Answer:**
+
+The response variable is the 'length of lumber' and is quantitative. Therefore, we set up the hypotheses in terms of \( \mu \). Here the value of \( \mu_0 \) is 8.5. With the builder wanting to check if the mean length is different from 8.5, she would set up the hypotheses as a two-tailed test:
+
+
+  \( H_0: \mu = 8.5 \) vs \( H_a: \mu \neq 8.5 \)
+
+d.  A political news company believes the national approval rating for the current president has fallen below 40%.
+
+**Answer:** 
+
+The response variable here is 'approval rating' and is a qualitative variable. Therefore, we will set up the hypothesis in terms of \( p \). In this case, the \( p_0 \) value is 0.4 and the hypotheses would be set up as a left-tailed test:
+
+
+  \( H_0: p = 0.4 \) vs. \( H_a: p < 0.4 \)
+
+##  Hypothesis Test for One-Sample Proportion
+
+
+In this section, we will demonstrate how we use the sampling distribution of the sample proportion to perform the hypothesis test for one proportion. Recall that if \( np \) and \( n(1-p) \) are both greater than five, then the sample proportion, \( \hat{p} \), will have an approximate normal distribution with mean \( p \), standard error \( \sqrt{\frac{p(1-p)}{n}} \), and the estimated standard error \( \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \).
+
+In hypothesis testing, we assume the null hypothesis is true. Remember, we set up the null hypothesis as \( H_0: p = p_0 \). This is very important! This statement says that we are assuming the unknown population proportion, \( p \), is equal to the value \( p_0 \).
+
+Since this is true, then we can follow the same logic above. Therefore, if \( np_0 \) and \( n(1-p_0) \) are both greater than five, then the sampling distribution of the sample proportion will be approximately normal with mean \( p_0 \) and standard error \( \sqrt{\frac{p_0(1-p_0)}{n}} \).
+
+We can find probabilities associated with values of \( \hat{p} \) by using:
+
+\[ z^* = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \]
+
+
+**Example**
+
+Referring back to a previous example, say we take a random sample of 500 Penn State students and find that 278 are from Pennsylvania. Can we conclude that the proportion is larger than 0.5? Is 0.556 (\( \frac{278}{500} \)) **much bigger than** 0.5? What is much bigger?
+
+**Answer:**
+
+This depends on the standard deviation of \( \hat{p} \) under the null hypothesis.
+
+\[ \hat{p} - p_0 = 0.556 - 0.5 = 0.056 \]
+
+The standard deviation of \( \hat{p} \), if the null hypothesis is true (e.g. when \( p_0 = 0.5 \)), is:
+
+\[ \sqrt{\frac{p_0 (1-p_0)}{n}} = \sqrt{\frac{0.5(1-0.5)}{500}} = 0.0224 \]
+
+We can compare them by taking the ratio.
+
+\[ z^* = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 (1-p_0)}{n}}} = \frac{0.556 - 0.5}{\sqrt{\frac{0.5(1-0.5)}{500}}} = 2.504 \]
+
+Therefore, assuming the true population proportion is 0.5, a sample proportion of 0.556 is 2.504 standard deviations above the mean.
+
+The \( z^* \) value we found in the above example is referred to as the test statistic.
+
+**Test statistic**
+
+The sample statistic one uses to either reject \( H_0 \) (and conclude \( H_a \)) or fail to reject \( H_0 \).
+
+Certainly! Below is the RMarkdown code for the given text:
+
+### Making a Decision
+
+In the previous example for Bauchi State students, we found that assuming the true population proportion is 0.5, a sample proportion of 0.556 is 2.504 standard deviations above the mean, *p*.
+
+Is it far enough away from the 0.5 to suggest that there is evidence against the null? Is there a cutoff for the number of standard deviations that we would find acceptable?
+
+What if instead of a cutoff, we found a probability? Recall the alternative hypothesis for this example was *H_a: p > 0.5*. So if we found, for example, the probability of a sample proportion being 0.556 or greater, then we get \(P(Z > 2.504) = 0.0061\).
+
+This means that, if the true proportion is 0.5, the probability we would get a sample proportion of 0.556 or greater is 0.0061. Very small! But is it small enough to say there is evidence against the null?
+
+To determine whether the probability is small or how many standard deviations are “acceptable”, we need a preset level of significance, which is the probability of a Type I error. Recall that a Type I error is the event of rejecting the null hypothesis when that null hypothesis is true. Think of finding guilty a person who is actually innocent.
+
+When we specify our hypotheses, we should have some idea of what size of a Type I error we can tolerate. It is denoted as $\alpha$. A conventional choice of $\alpha$ is 0.05. Values ranging from 0.01 to 0.1 are also common and the choice of α depends on the problem one is working on.
+
+Once we have this preset level, we can determine whether or not there is significant evidence against the null. There are two methods to determine if we have enough evidence: the **rejection region method** and the **p-value method**.
+
+
+### Rejection Region Approach
+
+We start the hypothesis test process by determining the null and alternative hypotheses. Then we set our significance level, α, which is the probability of making a Type I error. We can determine the appropriate cutoff called the critical value and find a range of values for which we would reject the null hypothesis.
+
+**Critical values:** The values that separate the rejection and non-rejection regions.
+
+**Rejection region:** The set of values for the test statistic that leads to rejection of $H_0$
+
+The graphs below show us how to find the critical values and the rejection regions for the three different alternative hypotheses and for a set significance level, $\alpha$. The rejection region is based on the alternative hypothesis.
+
+The rejection region is the region where, if our test statistic falls, then we have enough evidence to reject the null hypothesis. If we consider the right-tailed test, for example, the rejection region is any value greater than $c_{(1-\alpha)}$, where $c_{(1-\alpha)}$ is the critical value.
+
+**Left-Tailed Test**
+
+Reject $H_0$ if the test statistics is **less than or equal to** the critical value $(c_α)$
+
+![Left Tailed](\pictures\Picture1.png)
+
+**Right-Tailed Test**
+
+Reject $H_0$ if the test statistic is **greater than or equal to** the critical value $(c_{1-α})$
+
+
+![Right Tailed](\pictures\Picture2.png)
+**Two-Tailed Test**
+
+Reject H_0 if the absolute value of the test statistic is greater than or equal to the absolute value of the critical value $(c_{(α/2)})$.
+
+![Two Tailed](\pictures\Picture3.png)
+
+**P-Value Approach**
+
+As with the rejection region approach, the P-value approach will need the null and alternative hypotheses, the significance level, and the test statistics. Instead of finding a region, we are going to find a probability called the p-value.
+
+**P-value**
+
+The p-value (or probability value) is the probability that the test statistic equals the observed value or a more extreme value under the assumption that the null hypothesis is true.
+
+The p-value is a probability statement based on the alternative hypothesis. The p-value is found differently for each of the alternative hypotheses.
+
+**Left-tailed:** If $H_a$ is left-tailed, then the p-value is the probability the sample data produces a value equal to or less than the observed test statistic.
+
+**Right-tailed:** If $H_a$ is right-tailed, then the p-value is the probability the sample data produces a value equal to or greater than the observed test statistic.
+
+**Two-tailed:** If H_a is two-tailed, then the p-value is two times the probability the sample data produces a value equal to or greater than the absolute value of the observed test statistic.
+
+So for one-sample proportions we have...
+
+|Left-Tailed |	Right-Tailed |	Two-Tailed|
+|------------|---------------|------------|
+|$P(Z≤z^*)$	| $P(Z≥z^*)$	| $2×P(Z≥|z^* |)$|
+
 

@@ -23,7 +23,7 @@
 <meta name="author" content="AbdulHafiz Abba" />
 
 
-<meta name="date" content="2024-03-15" />
+<meta name="date" content="2024-03-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -87,6 +87,15 @@
 <ul>
 <li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#types-of-errors"><i class="fa fa-check"></i><b>1.2.1</b> Types of errors</a></li>
 </ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing-1"><i class="fa fa-check"></i><b>1.3</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#set-up-for-one-sample-hypotheses"><i class="fa fa-check"></i><b>1.3.1</b> Set-Up for One-Sample Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#hypothesis-test-for-one-sample-proportion"><i class="fa fa-check"></i><b>1.4</b> Hypothesis Test for One-Sample Proportion</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#making-a-decision"><i class="fa fa-check"></i><b>1.4.1</b> Making a Decision</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#rejection-region-approach"><i class="fa fa-check"></i><b>1.4.2</b> Rejection Region Approach</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
 <li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
@@ -112,7 +121,7 @@
 <div id="header">
 <h1 class="title">Test of Hypothesis II</h1>
 <p class="author"><em>AbdulHafiz Abba</em></p>
-<p class="date"><em>2024-03-15</em></p>
+<p class="date"><em>2024-03-16</em></p>
 </div>
 <div id="introduction-to-hypothesis-testing" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> INTRODUCTION TO HYPOTHESIS TESTING<a href="index.html#introduction-to-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -153,7 +162,6 @@
 </ul>
 <p><strong>Note!</strong> Why can’t we say we “accept the null”? The reason is that we are assuming the null hypothesis is true and trying to see if there is evidence against it. Therefore, the conclusion should be in terms of rejecting the null.</p>
 <p>Consider the following table. The table shows the decision/conclusion of the hypothesis test and the unknown “reality”, or truth. We do not know if the null is true or if it is false. If the null is false and we reject it, then we made the correct decision. If the null hypothesis is true and we fail to reject it, then we made the correct decision.</p>
-[
 <span class="math display">\[\begin{array}{cc}
 
 \textbf{Decision} &amp; \textbf{Reality} &amp; {} \\
@@ -166,23 +174,19 @@ Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; Type \ II \ error\\
 \hline
 
 \end{array}\]</span>
-<p>]</p>
 <p>So what happens when we do not make the correct decision?</p>
 <p>When doing hypothesis testing, two types of mistakes may be made and we call them Type I error and Type II error. If we reject the null hypothesis when it is true, then we made a type I error. If the null hypothesis is false and we failed to reject it, we made another error called a Type II error.</p>
-[
 <span class="math display">\[\begin{array}{cc}
 
 \textbf{Decision} &amp; \textbf{Reality} &amp; {} \\
 \hline
 &amp; H_0 \ is \  true &amp; H_0 \ is \ false\\
 \hline
-Reject \ H_0, (conclude \ a) &amp; \text{Reject &quot;building is not safe&quot; when it is not safe }(Type \ I\  error)  &amp; Correct \ decision \\
-Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject &#39;building not is safe&#39; when it is safe} (Type \ II \ error)\\
-
-\hline
-
+Reject \ H_0, (conclude \ a) &amp; \text{Reject &quot;building is not safe&quot;} \ decision \\
+&amp;\text{ when it is not safe }(Type \ I\  error)  &amp; Correct\\
+Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject &#39;building not is safe&#39;}\\
+&amp;&amp;\text{when it is safe} (Type \ II \ error)\\
 \end{array}\]</span>
-<p>]</p>
 <div id="types-of-errors" class="section level3 hasAnchor" number="1.2.1">
 <h3><span class="header-section-number">1.2.1</span> Types of errors<a href="index.html#types-of-errors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -201,24 +205,195 @@ Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject 
 <p>A man, Mr. Orangejuice, goes to trial and is tried for the murder of his ex-wife. He is either guilty or not guilty. We found before that…</p>
 <p><span class="math inline">\(H_0: \text{Mr. Orangejuice is innocent}\)</span></p>
 <p><span class="math inline">\(H_a: \text{Mr. Orangejuice is guilty}\)</span></p>
-<p></p>
-<p></p>
-<p> Type I error is committed if we reject <span class="math inline">\(H_0\)</span> when it is true. In other words, when the man is innocent but found guilty.</p>
-<p><span class="math inline">\(\alpha\)</span>: <span class="math inline">\(\alpha\)</span> is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.</p>
-<p> Type II error is committed if we fail to reject <span class="math inline">\(H_0\)</span> when it is false. In other words, when the man is guilty but found not guilty.</p>
-<p><span class="math inline">\(\beta\)</span>: <span class="math inline">\(\beta\)</span> is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.</p>
+<p>Interpret Type I error, <span class="math inline">\(\alpha\)</span>, Type II error, <span class="math inline">\(\beta\)</span>.</p>
+<p><strong>Answer</strong></p>
+<p><strong>Type I Error:</strong> Type I error is committed if we reject <span class="math inline">\(H_0\)</span> when it is true. In other words, when the man is innocent but found guilty.</p>
+<p><span class="math inline">\(\alpha\)</span>: is the probability of a Type I error, or in other words, it is the probability that Mr. Orangejuice is innocent but found guilty.</p>
+<p><strong>Type II Error:</strong> Type II error is committed if we fail to reject <span class="math inline">\(H_0\)</span> when it is false. In other words, when the man is guilty but found not guilty.</p>
+<p><span class="math inline">\(\beta\)</span>: is the probability of a Type II error, or in other words, it is the probability that Mr. Orangejuice is guilty but found not guilty.</p>
 <p>As you can see here, the Type I error (putting an innocent man in jail) is the more serious error. Ethically, it is more serious to put an innocent man in jail than to let a guilty man go free. So to minimize the probability of a type I error we would choose a smaller significance level.</p>
-<p></p>
-<p>An inspector has to choose between certifying a building as safe or saying that the building is not safe. There are two hypotheses:</p>
-<p></p>
-<p></p>
-<p><span class="math display">\[ H_0: \text{Building is not safe} \quad \text{vs} \quad H_a: \text{Building is safe} \]</span></p>
-<p>Power and <span class="math inline">\(\beta\)</span> are complements of each other. Therefore, they have an inverse relationship, i.e., as one increases, the other decreases.</p>
-<p>It makes sense for us to set up the <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_a\)</span> as above (that is, assume building is not safe until proven otherwise), because if we switch <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_a\)</span> (that is, if <span class="math inline">\(H_0\)</span> was building is safe and <span class="math inline">\(H_a\)</span> is building is not safe) and if we fail to reject <span class="math inline">\(H_0\)</span>, we cannot quite conclude that building is safe (we can only fail to reject <span class="math inline">\(H_0\)</span>, we cannot accept <span class="math inline">\(H_0\)</span>).</p>
+</div>
+</div>
+<div id="the-logic-of-hypothesis-testing-1" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> The Logic of Hypothesis Testing<a href="index.html#the-logic-of-hypothesis-testing-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A hypothesis, in statistics, is a statement about a population parameter, where this statement typically is represented by some specific numerical value. In testing a hypothesis, we use a method where we gather data in an effort to gather evidence about the hypothesis.</p>
 <p>How do we decide whether to reject the null hypothesis?</p>
-<p></p>
+<ul>
+<li>If the sample data are dependable with the null hypothesis, then we do not reject it.</li>
+<li>If the sample data are inconsistent with the null hypothesis, but consistent with the alternative, then we reject the null hypothesis and conclude that the alternative hypothesis is true.</li>
+</ul>
+<p><strong>Six Steps for Hypothesis Tests</strong></p>
 <p>In hypothesis testing, there are certain steps one must follow. Below these are summarized into six such steps to conducting a test of a hypothesis.</p>
+<ul>
+<li><p><strong>Set up the hypotheses and check conditions:</strong> Each hypothesis test includes two hypotheses about the population. One is the null hypothesis, notated as <span class="math inline">\(H_0\)</span>, which is a statement of a particular parameter value. This hypothesis is assumed to be true until there is evidence to suggest otherwise. The second hypothesis is called the alternative, or research hypothesis, notated as <span class="math inline">\(H_a\)</span>. The alternative hypothesis is a statement of a range of alternative values in which the parameter may fall. One must also check that any conditions (assumptions) needed to run the test have been satisfied e.g. normality of data, independence, and number of success and failure outcomes.</p></li>
+<li><p><strong>Decide on the significance level, <span class="math inline">\(\alpha\)</span>:</strong> This value is used as a probability cutoff for making decisions about the null hypothesis. This alpha value represents the probability we are willing to place on our test for making an incorrect decision in regards to rejecting the null hypothesis. The most common <span class="math inline">\(\alpha\)</span> value is 0.05 or 5%. Other popular choices are 0.01 (1%) and 0.1 (10%).</p></li>
+<li><p><strong>Calculate the test statistic:</strong> Gather sample data and calculate a test statistic where the sample statistic is compared to the parameter value. The test statistic is calculated under the assumption the null hypothesis is true and incorporates a measure of standard error and assumptions (conditions) related to the sampling distribution.</p></li>
+<li><p><strong>Calculate probability value (p-value), or find the rejection region:</strong> A p-value is found by using the test statistic to calculate the probability of the sample data producing such a test statistic or one more extreme. The rejection region is found by using alpha to find a critical value; the rejection region is the area that is more extreme than the critical value. We discuss the p-value and rejection region in more detail in the next section.</p></li>
+<li><p><strong>Make a decision about the null hypothesis:</strong> In this step, we decide to either reject the null hypothesis or decide to fail to reject the null hypothesis. Notice we do not make a decision where we will accept the null hypothesis.</p></li>
+<li><p><strong>State an overall conclusion:</strong> Once we have found the p-value or rejection region, and made a statistical decision about the null hypothesis (i.e. we will reject the null or fail to reject the null), we then want to summarize our results into an overall conclusion for our test.</p></li>
+</ul>
+<div id="set-up-for-one-sample-hypotheses" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Set-Up for One-Sample Hypotheses<a href="index.html#set-up-for-one-sample-hypotheses" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We will continue our discussion by considering two specific hypothesis tests: a test of one proportion, and a test of one mean. We will provide the general set up of the hypothesis and the test statistics for both tests. From there, we will branch off into specific discussions on each of these tests.</p>
+<p>In order to make a judgment about the value of a parameter, the problem can be set up as a hypothesis testing problem. We usually set the hypothesis that one wants to conclude as the alternative hypothesis, also called the research hypothesis.</p>
+<p>Since hypothesis tests are about a parameter value, the hypotheses use parameter notation - p for proportion or μ for mean - in their arrangement. For tests of a proportion or a test of a mean, we would choose the appropriate alternative based on our research question.</p>
+<p>Below are the possible hypotheses from which we would select only one of them based on the research question. The symbols p_0 and μ_0 are used in these general statements and in practice, get replaced by the parameter value, or constant, being tested.
+<span class="math display">\[
+\begin{array}{cccc}
+\textbf{Research Question} &amp;    \text{Is the population proportion}     &amp; \text{Is the population proportion}   &amp; \text{Is the population proportion} \\
+&amp;\text{different from  }p_0? &amp; \text{ greater than }p_0? &amp; \text{ less than }p_0?\\
+\text{Null Hypothesis, }H_0 &amp;   p = p_0 &amp;   p = p_0 &amp;   p = p_0 \\
+\text{Alternative Hypothesis, } H_a &amp; p ≠ p_0   &amp; p &gt;p_0 &amp;  p &lt;p_0 \\
+\text{Type of Hypothesis Test} &amp;    Two-tailed, non-directional &amp; Right-tailed, directional &amp; Left-tailed, directional \\
+\hline
+*p_0 \text{ is the hypothesized population proportion}\\
+\end{array}
+\]</span></p>
+<p><strong>One Sample Mean</strong></p>
+<table>
+<colgroup>
+<col width="37%" />
+<col width="16%" />
+<col width="21%" />
+<col width="23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Research Question</th>
+<th>Null Hypothesis, <span class="math inline">\(H_0\)</span></th>
+<th>Alternative Hypothesis, <span class="math inline">\(H_a\)</span></th>
+<th>Type of Hypothesis Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Is the population mean different from <span class="math inline">\(\mu_0\)</span>?</td>
+<td><span class="math inline">\(\mu = \mu_0\)</span></td>
+<td><span class="math inline">\(\mu \neq \mu_0\)</span></td>
+<td>Two-tailed, non-directional</td>
+</tr>
+<tr class="even">
+<td>Is the population mean greater than <span class="math inline">\(\mu_0\)</span>?</td>
+<td><span class="math inline">\(\mu = \mu_0\)</span></td>
+<td><span class="math inline">\(\mu &gt; \mu_0\)</span></td>
+<td>Right-tailed, directional</td>
+</tr>
+<tr class="odd">
+<td>Is the population mean less than <span class="math inline">\(\mu_0\)</span>?</td>
+<td><span class="math inline">\(\mu = \mu_0\)</span></td>
+<td><span class="math inline">\(\mu &lt; \mu_0\)</span></td>
+<td>Left-tailed, directional</td>
+</tr>
+</tbody>
+</table>
+<p>The most important step in hypothesis testing is choosing the correct parameter of interest and correctly setting up the alternative hypothesis.</p>
+<p>Step 1 is a very important step to set up correctly. If your hypotheses are incorrect, your conclusion will be incorrect. In this next section, we practice with Step 1 for the one sample situations.</p>
+<p><strong>Example: Null and Alternative Hypotheses</strong></p>
+<p>In each of the following scenarios, determine the parameter of interest and the null and alternative hypotheses.</p>
+<ol style="list-style-type: lower-alpha">
+<li>When debating the State appropriation for Bauchi State, the following question is asked: “Are the majority of students at Gadau State Univerity from Bauchi State?”</li>
+</ol>
+<p><strong>Answer:</strong></p>
+<p>The response variable is ‘State’ and is a qualitative variable. Therefore, the parameter of interest would be <span class="math inline">\(p\)</span>, the population proportion of students from Bauchi. The hypotheses should be in terms of <span class="math inline">\(p\)</span>. The value we are testing is the “majority” (50%) or <span class="math inline">\(p_0 = 0.5\)</span>. The majority also implies greater than 50%. Thus, the hypothesis set up would be a right-tailed test.</p>
+<p><span class="math inline">\(H_0: p = 0.5\)</span> vs. <span class="math inline">\(H_a: p &gt; 0.5\)</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>A consumer test agency wants to see whether the mean lifetime of a brand of tires is less than 42,000 miles. The tire manufacturer advertises that the average lifetime is at least 42,000 miles.</li>
+</ol>
+<p><strong>Answer:</strong></p>
+<p>The response variable here is ‘lifetime’ and is a quantitative variable. Therefore, set up the hypotheses in terms of <span class="math inline">\(\mu\)</span>. Here the value of <span class="math inline">\(\mu_0\)</span> is 42,000. With the consumer test agency wanting to research that the mean lifetime is below 42,000, we would set up the hypotheses as a left-tailed test:</p>
+<p><span class="math inline">\(H_0: \mu = 42000\)</span> vs. <span class="math inline">\(H_a: \mu &lt; 42000\)</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>The length of a certain lumber from a national home building store is supposed to be 8.5 feet. A builder wants to check whether the shipment of lumber she receives has a mean length different from 8.5 feet.</li>
+</ol>
+<p><strong>Answer:</strong></p>
+<p>The response variable is the ‘length of lumber’ and is quantitative. Therefore, we set up the hypotheses in terms of <span class="math inline">\(\mu\)</span>. Here the value of <span class="math inline">\(\mu_0\)</span> is 8.5. With the builder wanting to check if the mean length is different from 8.5, she would set up the hypotheses as a two-tailed test:</p>
+<p><span class="math inline">\(H_0: \mu = 8.5\)</span> vs <span class="math inline">\(H_a: \mu \neq 8.5\)</span></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>A political news company believes the national approval rating for the current president has fallen below 40%.</li>
+</ol>
+<p><strong>Answer:</strong></p>
+<p>The response variable here is ‘approval rating’ and is a qualitative variable. Therefore, we will set up the hypothesis in terms of <span class="math inline">\(p\)</span>. In this case, the <span class="math inline">\(p_0\)</span> value is 0.4 and the hypotheses would be set up as a left-tailed test:</p>
+<p><span class="math inline">\(H_0: p = 0.4\)</span> vs. <span class="math inline">\(H_a: p &lt; 0.4\)</span></p>
+</div>
+</div>
+<div id="hypothesis-test-for-one-sample-proportion" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Hypothesis Test for One-Sample Proportion<a href="index.html#hypothesis-test-for-one-sample-proportion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this section, we will demonstrate how we use the sampling distribution of the sample proportion to perform the hypothesis test for one proportion. Recall that if <span class="math inline">\(np\)</span> and <span class="math inline">\(n(1-p)\)</span> are both greater than five, then the sample proportion, <span class="math inline">\(\hat{p}\)</span>, will have an approximate normal distribution with mean <span class="math inline">\(p\)</span>, standard error <span class="math inline">\(\sqrt{\frac{p(1-p)}{n}}\)</span>, and the estimated standard error <span class="math inline">\(\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\)</span>.</p>
+<p>In hypothesis testing, we assume the null hypothesis is true. Remember, we set up the null hypothesis as <span class="math inline">\(H_0: p = p_0\)</span>. This is very important! This statement says that we are assuming the unknown population proportion, <span class="math inline">\(p\)</span>, is equal to the value <span class="math inline">\(p_0\)</span>.</p>
+<p>Since this is true, then we can follow the same logic above. Therefore, if <span class="math inline">\(np_0\)</span> and <span class="math inline">\(n(1-p_0)\)</span> are both greater than five, then the sampling distribution of the sample proportion will be approximately normal with mean <span class="math inline">\(p_0\)</span> and standard error <span class="math inline">\(\sqrt{\frac{p_0(1-p_0)}{n}}\)</span>.</p>
+<p>We can find probabilities associated with values of <span class="math inline">\(\hat{p}\)</span> by using:</p>
+<p><span class="math display">\[ z^* = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \]</span></p>
+<p><strong>Example</strong></p>
+<p>Referring back to a previous example, say we take a random sample of 500 Penn State students and find that 278 are from Pennsylvania. Can we conclude that the proportion is larger than 0.5? Is 0.556 (<span class="math inline">\(\frac{278}{500}\)</span>) <strong>much bigger than</strong> 0.5? What is much bigger?</p>
+<p><strong>Answer:</strong></p>
+<p>This depends on the standard deviation of <span class="math inline">\(\hat{p}\)</span> under the null hypothesis.</p>
+<p><span class="math display">\[ \hat{p} - p_0 = 0.556 - 0.5 = 0.056 \]</span></p>
+<p>The standard deviation of <span class="math inline">\(\hat{p}\)</span>, if the null hypothesis is true (e.g. when <span class="math inline">\(p_0 = 0.5\)</span>), is:</p>
+<p><span class="math display">\[ \sqrt{\frac{p_0 (1-p_0)}{n}} = \sqrt{\frac{0.5(1-0.5)}{500}} = 0.0224 \]</span></p>
+<p>We can compare them by taking the ratio.</p>
+<p><span class="math display">\[ z^* = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 (1-p_0)}{n}}} = \frac{0.556 - 0.5}{\sqrt{\frac{0.5(1-0.5)}{500}}} = 2.504 \]</span></p>
+<p>Therefore, assuming the true population proportion is 0.5, a sample proportion of 0.556 is 2.504 standard deviations above the mean.</p>
+<p>The <span class="math inline">\(z^*\)</span> value we found in the above example is referred to as the test statistic.</p>
+<p><strong>Test statistic</strong></p>
+<p>The sample statistic one uses to either reject <span class="math inline">\(H_0\)</span> (and conclude <span class="math inline">\(H_a\)</span>) or fail to reject <span class="math inline">\(H_0\)</span>.</p>
+<p>Certainly! Below is the RMarkdown code for the given text:</p>
+<div id="making-a-decision" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Making a Decision<a href="index.html#making-a-decision" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In the previous example for Bauchi State students, we found that assuming the true population proportion is 0.5, a sample proportion of 0.556 is 2.504 standard deviations above the mean, <em>p</em>.</p>
+<p>Is it far enough away from the 0.5 to suggest that there is evidence against the null? Is there a cutoff for the number of standard deviations that we would find acceptable?</p>
+<p>What if instead of a cutoff, we found a probability? Recall the alternative hypothesis for this example was <em>H_a: p &gt; 0.5</em>. So if we found, for example, the probability of a sample proportion being 0.556 or greater, then we get <span class="math inline">\(P(Z &gt; 2.504) = 0.0061\)</span>.</p>
+<p>This means that, if the true proportion is 0.5, the probability we would get a sample proportion of 0.556 or greater is 0.0061. Very small! But is it small enough to say there is evidence against the null?</p>
+<p>To determine whether the probability is small or how many standard deviations are “acceptable”, we need a preset level of significance, which is the probability of a Type I error. Recall that a Type I error is the event of rejecting the null hypothesis when that null hypothesis is true. Think of finding guilty a person who is actually innocent.</p>
+<p>When we specify our hypotheses, we should have some idea of what size of a Type I error we can tolerate. It is denoted as <span class="math inline">\(\alpha\)</span>. A conventional choice of <span class="math inline">\(\alpha\)</span> is 0.05. Values ranging from 0.01 to 0.1 are also common and the choice of α depends on the problem one is working on.</p>
+<p>Once we have this preset level, we can determine whether or not there is significant evidence against the null. There are two methods to determine if we have enough evidence: the <strong>rejection region method</strong> and the <strong>p-value method</strong>.</p>
+</div>
+<div id="rejection-region-approach" class="section level3 hasAnchor" number="1.4.2">
+<h3><span class="header-section-number">1.4.2</span> Rejection Region Approach<a href="index.html#rejection-region-approach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We start the hypothesis test process by determining the null and alternative hypotheses. Then we set our significance level, α, which is the probability of making a Type I error. We can determine the appropriate cutoff called the critical value and find a range of values for which we would reject the null hypothesis.</p>
+<p><strong>Critical values:</strong> The values that separate the rejection and non-rejection regions.</p>
+<p><strong>Rejection region:</strong> The set of values for the test statistic that leads to rejection of <span class="math inline">\(H_0\)</span></p>
+<p>The graphs below show us how to find the critical values and the rejection regions for the three different alternative hypotheses and for a set significance level, <span class="math inline">\(\alpha\)</span>. The rejection region is based on the alternative hypothesis.</p>
+<p>The rejection region is the region where, if our test statistic falls, then we have enough evidence to reject the null hypothesis. If we consider the right-tailed test, for example, the rejection region is any value greater than <span class="math inline">\(c_{(1-\alpha)}\)</span>, where <span class="math inline">\(c_{(1-\alpha)}\)</span> is the critical value.</p>
+<p><strong>Left-Tailed Test</strong></p>
+<p>Reject <span class="math inline">\(H_0\)</span> if the test statistics is <strong>less than or equal to</strong> the critical value <span class="math inline">\((c_α)\)</span></p>
+<div class="figure">
+<img src="\pictures\Picture1.png" alt="" />
+<p class="caption">Left Tailed</p>
+</div>
+<p><strong>Right-Tailed Test</strong></p>
+<p>Reject <span class="math inline">\(H_0\)</span> if the test statistic is <strong>greater than or equal to</strong> the critical value <span class="math inline">\((c_{1-α})\)</span></p>
+<p><img src="\pictures\Picture2.png" alt="Right Tailed" />
+<strong>Two-Tailed Test</strong></p>
+<p>Reject H_0 if the absolute value of the test statistic is greater than or equal to the absolute value of the critical value <span class="math inline">\((c_{(α/2)})\)</span>.</p>
+<div class="figure">
+<img src="\pictures\Picture3.png" alt="" />
+<p class="caption">Two Tailed</p>
+</div>
+<p><strong>P-Value Approach</strong></p>
+<p>As with the rejection region approach, the P-value approach will need the null and alternative hypotheses, the significance level, and the test statistics. Instead of finding a region, we are going to find a probability called the p-value.</p>
+<p><strong>P-value</strong></p>
+<p>The p-value (or probability value) is the probability that the test statistic equals the observed value or a more extreme value under the assumption that the null hypothesis is true.</p>
+<p>The p-value is a probability statement based on the alternative hypothesis. The p-value is found differently for each of the alternative hypotheses.</p>
+<p><strong>Left-tailed:</strong> If <span class="math inline">\(H_a\)</span> is left-tailed, then the p-value is the probability the sample data produces a value equal to or less than the observed test statistic.</p>
+<p><strong>Right-tailed:</strong> If <span class="math inline">\(H_a\)</span> is right-tailed, then the p-value is the probability the sample data produces a value equal to or greater than the observed test statistic.</p>
+<p><strong>Two-tailed:</strong> If H_a is two-tailed, then the p-value is two times the probability the sample data produces a value equal to or greater than the absolute value of the observed test statistic.</p>
+<p>So for one-sample proportions we have…</p>
+<table>
+<thead>
+<tr class="header">
+<th>Left-Tailed</th>
+<th>Right-Tailed</th>
+<th>Two-Tailed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P(Z≤z^*)\)</span></td>
+<td><span class="math inline">\(P(Z≥z^*)\)</span></td>
+<td><span class="math inline">\(2×P(Z≥|z^* |)\)</span></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>

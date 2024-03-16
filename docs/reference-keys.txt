@@ -4,5 +4,10 @@ null-hypothesis
 alternative-hypothesis
 the-logic-of-hypothesis-testing
 types-of-errors
+the-logic-of-hypothesis-testing-1
+set-up-for-one-sample-hypotheses
+hypothesis-test-for-one-sample-proportion
+making-a-decision
+rejection-region-approach
 the-pool-of-tears
 a-caucus-race-and-a-long-tale
