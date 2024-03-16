@@ -9,5 +9,6 @@ set-up-for-one-sample-hypotheses
 hypothesis-test-for-one-sample-proportion
 making-a-decision
 rejection-region-approach
+steps-in-conducting-a-hypothesis-test-for-p
 the-pool-of-tears
 a-caucus-race-and-a-long-tale

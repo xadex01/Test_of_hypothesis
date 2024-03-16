@@ -353,3 +353,186 @@ So for one-sample proportions we have...
 |$P(Z≤z^*)$	| $P(Z≥z^*)$	| $2×P(Z≥|z^* |)$|
 
 
+Once we find the p-value, we compare the p-value to our preset significance level.
+
+-  If our p-value is less than or equal to α, then there is enough evidence to reject the null hypothesis.
+-  If our p-value is greater than α, there is not enough evidence to reject the null hypothesis.
+
+**Caution!** One should be aware that α is also called level of significance. This makes for a confusion in terminology. α is the *preset* level of significance whereas the p-value is the observed level of significance. The p-value, in fact, is a summary statistic which translates the observed test statistic's value to a probability which is easy to interpret.
+
+
+**Important note:** We can summarize the data by reporting the p-value and let the users decide to reject $H_a$ or not to reject $H_a$ for their subjectively chosen α values.
+
+
+## Steps in Conducting a Hypothesis Test for p
+
+**Six Steps for One-Sample Proportion Hypothesis Test**
+
+Let's apply the general steps for hypothesis testing to the specific case of testing a one-sample proportion.
+
+**Step 1:** Set up the hypotheses and check conditions.
+
+$np_0≥5$ and $n(1-p_0)≥5$
+
+**One Proportion Z-test Hypotheses**
+
+|Left-Tailed	| Left-Tailed	| Left-Tailed |
+|-------------|-------------|-------------|
+|$H_0:p=p_0$	| $H_0:p=p_0$	| $H_0:p=p_0$|
+|$H_a:p<p_0$	| $H_a:p>p_0$	| $H_0:p≠p_0$|
+
+
+**Step 2:** Decide on the level of significance ($α$).
+
+**Step 3:** Calculate the test statistic.
+
+**One Proportion Z-test:** \(z^*=\frac{(p ̂-p_0)}{\sqrt{\frac{p_0 (1-p_0)}{n}}}\)
+
+The first few steps (Step 1 - Step 3) are exactly the same as the rejection region or p-value approach. 
+
+The next part will discuss steps 4 - 6 for both approaches.
+
+**Rejection Region Approach**
+
+
+**Step 4:** Find the appropriate critical values for the tests. Write down clearly the rejection region for the problem.
+
+|Left-Tailed Test | Right-Tailed Test | 	Two-Tailed Test |
+|-----------------|-------------------|--------------------|
+|![](\pictures\Picturelf.png) | ![](\pictures\Picturert.png) | ![](\pictures\Picture2t.png) |
+
+
+View the critical values and regions with an α =.05.
+
+Critical Values for α =.05
+
+**Step 5:** Make a decision about the null hypothesis.
+
+Check to see if the value of the test statistic falls in the rejection region. If it does, then reject $H_0$ (and conclude $H_a$). If it does not fall in the rejection region, do not reject $H_0$.
+
+**Step 6:** State an overall conclusion.
+
+
+**P-Value Approach**
+
+**Step 4:** Compute the appropriate p-value based on our alternative hypothesis.
+
+|Left-Tailed	|Right-Tailed	| Two-Tailed |
+|-------------|-------------|------------|
+|$P(Z≤z^*)$	|$P(Z≥z^*)$ |	$2×P(Z≥|z^* |)$|
+
+**Step 5:** Make a decision about the null hypotheses.
+
+If the p-value is less than the significance level, then reject the null hypothesis. If the p-value is greater than the significance level, fail to reject the null hypothesis.
+
+**Step 6:** State an overall conclusion.
+
+Note! Recall that the P-value is a probability of obtaining a value of the test statistic or a more extreme value of the test statistic assuming that the null hypothesis is true.
+
+
+**Example**: Bauchi State Students from BASUG
+Referring back to example above Say we take a random sample of 500 Bauchi State students and find that 278 are from Bauchi. Can we conclude that the proportion is larger than 0.5 at a 5% level of significance?
+Conduct the test using both the rejection region and p-value approach.
+
+
+**Answer**
+
+**Step 1:** Set up the hypotheses and check conditions.
+
+Set up the hypotheses. Since the research hypothesis is to check whether the proportion is greater than 0.5 we set it up as a one (right)-tailed test:
+
+\[H_0:p=0.5 \ vs \ H_a:p>0.5\]
+
+Can we use the z-test statistic? The answer is yes since the hypothesized value $p_0$ is 0.5 and we can check that:
+\[
+np_0 = 500(0.5)=250≥5 \\  
+and \ n(1-p_0)=500(1-0.5)=250≥5
+\]
+
+**Step 2:** Decide on the significance level, α.
+
+According to the question, α =0.05.
+
+**Step 3:** Calculate the test statistic:
+
+\[z^*= \frac{(0.556-0.5)}{\sqrt{(0.5(1-0.5)/500}} \\
+
+\\
+
+z^*=2.504
+\]
+
+
+**Rejection Region Approach**
+
+**Step 4:** Find the appropriate critical values for the test using the z-table. Write down clearly the rejection region for the problem.
+
+We can use the standard normal table to find the value of $Z_0.05$. From the table, $Z_0.05$ is found to be 1.645 and thus the critical value is 1.645. The rejection region for the right-tailed test is given by:
+
+$z^*>1.645$
+
+**Step 5:** Make a decision about the null hypothesis.
+
+The test statistic or the observed Z-value is 2.504. Since $z^*$ falls within the rejection region, we reject $H_0$.
+
+**Step 6:** State an overall conclusion.
+
+With a test statistic of 2.504 and critical value of 1.645 at a 5% level of significance, we have enough statistical evidence to reject the null hypothesis. We conclude that a majority of the students are from Bauchi.
+
+
+**P-Value Approach**
+
+**Step 4:** Compute the appropriate p-value based on our alternative hypothesis:
+
+\[p-value= P(Z≤z^* )=P(Z≤2.504)=0.0062\]
+
+**Step 5:** Make a decision about the null hypothesis.
+Since $p-value=0.0062≤0.05$ (the α value), we reject the null hypothesis.
+
+**Step 6:** State an overall conclusion.
+
+With a test statistic of 2.504 and p-value of 0.0062, we reject the null hypothesis at a 5% level of significance. We conclude that a majority of the students are from Bauchi. 
+
+**Exercise**
+
+**Online Purchases**
+An e-commerce research company claims that 60% or more graduate students have bought merchandise online. A consumer group is suspicious of the claim and thinks that the proportion is lower than 60%. A random sample of 80 graduate students shows that only 22 students have ever done so. Is there enough evidence to show that the true proportion is lower than 60%?
+Conduct the test at 10% Type I error rate and use the p-value and rejection region approaches.
+
+6.2 Sample Size
+Overview
+So far, in this section, we have focused on using a random sample of size n to find an interval estimate for a variety of population parameters, including a mean μ, a proportion p, and a standard deviation σ. In none of our discussions did we talk about how large a sample should be in order to ensure that the interval estimate we obtain is narrow enough to be worthwhile. That's what we'll do in this lesson!
+
+6.2 - Estimating a Mean
+Example 6.2
+A researcher wants to estimate μ, the mean systolic blood pressure of adult Americans, with 95% confidence and error ϵ no larger than 3 mm Hg. How many adult Americans, n, should the researcher randomly sample to achieve her estimation goal?
+Answer
+The researcher's goal is to estimate μ so that the error is no larger than 3 mm Hg. (By the way, ϵ is typically called the maximum error of the estimate.) That is, her goal is to calculate a 95% confidence interval such that:
+x ̅±ϵ=x ̅±3
+Now, we know the formula for a (1− α)100% confidence interval for a population mean μ is:
+x ̅±t_(α/2,n-1) (s/√n)
+So, it seems that a reasonable way to proceed would be to equate the terms appearing after each of the above ± signs, and solve for n. That is, equate:
+ϵ=t_(α/2,n-1) (s/√n)
+and solve for n. Multiplying through by the square root of n, we get:
+√(ϵ&n)=t_(α/2,n-1) (s)
+And, dividing through by ϵ and squaring both sides, we get:
+n=((t_(α/2,n-1) )^2 s^2)/ϵ^2 
+Now, what's wrong with the formula we derived? Well... the t -value on the right side of the equation depends on n.
+That's not particularly helpful given that we are trying to find n! We can solve that problem by simply replacing the t -value that depends on n with a Z -value that doesn't. After all, you might recall that as n increases, the t -distribution approaches the standard normal distribution. Doing so, we get:
+n≈((z_(α/2)^2 ) s^2)/ϵ^2  
+Before we make the calculation for our particular example, let's take a step back and summarize what we have just learned.
+
+Estimating a population mean μ
+The sample size necessary for estimating a population mean μ with (1− α)100% confidence and error no larger than ϵ is:
+n=((z_(α/2)^2 ) s^2)/ϵ^2 
+Typically, the hardest part of determining the necessary sample size is finding s^2, that is, a decent estimate of the population variance. There are a few ways of obtaining s^2.
+Ways to Determine s^2
+You can often get s^2, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you're in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you'll probably be able to find it in a research paper reported in some scientific journal.
+You can often get s^2, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or... whatever you're measuring).
+You can often get s^2, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
+x ̅±2s
+Here's a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of s:
+
+
+
+

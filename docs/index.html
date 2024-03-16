@@ -96,6 +96,7 @@
 <li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#making-a-decision"><i class="fa fa-check"></i><b>1.4.1</b> Making a Decision</a></li>
 <li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#rejection-region-approach"><i class="fa fa-check"></i><b>1.4.2</b> Rejection Region Approach</a></li>
 </ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#steps-in-conducting-a-hypothesis-test-for-p"><i class="fa fa-check"></i><b>1.5</b> Steps in Conducting a Hypothesis Test for p</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
 <li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
@@ -394,8 +395,168 @@ Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject 
 </tr>
 </tbody>
 </table>
-
+<p>Once we find the p-value, we compare the p-value to our preset significance level.</p>
+<ul>
+<li>If our p-value is less than or equal to α, then there is enough evidence to reject the null hypothesis.</li>
+<li>If our p-value is greater than α, there is not enough evidence to reject the null hypothesis.</li>
+</ul>
+<p><strong>Caution!</strong> One should be aware that α is also called level of significance. This makes for a confusion in terminology. α is the <em>preset</em> level of significance whereas the p-value is the observed level of significance. The p-value, in fact, is a summary statistic which translates the observed test statistic’s value to a probability which is easy to interpret.</p>
+<p><strong>Important note:</strong> We can summarize the data by reporting the p-value and let the users decide to reject <span class="math inline">\(H_a\)</span> or not to reject <span class="math inline">\(H_a\)</span> for their subjectively chosen α values.</p>
 </div>
+</div>
+<div id="steps-in-conducting-a-hypothesis-test-for-p" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Steps in Conducting a Hypothesis Test for p<a href="index.html#steps-in-conducting-a-hypothesis-test-for-p" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Six Steps for One-Sample Proportion Hypothesis Test</strong></p>
+<p>Let’s apply the general steps for hypothesis testing to the specific case of testing a one-sample proportion.</p>
+<p><strong>Step 1:</strong> Set up the hypotheses and check conditions.</p>
+<p><span class="math inline">\(np_0≥5\)</span> and <span class="math inline">\(n(1-p_0)≥5\)</span></p>
+<p><strong>One Proportion Z-test Hypotheses</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Left-Tailed</th>
+<th>Left-Tailed</th>
+<th>Left-Tailed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(H_0:p=p_0\)</span></td>
+<td><span class="math inline">\(H_0:p=p_0\)</span></td>
+<td><span class="math inline">\(H_0:p=p_0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(H_a:p&lt;p_0\)</span></td>
+<td><span class="math inline">\(H_a:p&gt;p_0\)</span></td>
+<td><span class="math inline">\(H_0:p≠p_0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2:</strong> Decide on the level of significance (<span class="math inline">\(α\)</span>).</p>
+<p><strong>Step 3:</strong> Calculate the test statistic.</p>
+<p><strong>One Proportion Z-test:</strong> <span class="math inline">\(z^*=\frac{(p ̂-p_0)}{\sqrt{\frac{p_0 (1-p_0)}{n}}}\)</span></p>
+<p>The first few steps (Step 1 - Step 3) are exactly the same as the rejection region or p-value approach.</p>
+<p>The next part will discuss steps 4 - 6 for both approaches.</p>
+<p><strong>Rejection Region Approach</strong></p>
+<p><strong>Step 4:</strong> Find the appropriate critical values for the tests. Write down clearly the rejection region for the problem.</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="33%" />
+<col width="35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Left-Tailed Test</th>
+<th>Right-Tailed Test</th>
+<th>Two-Tailed Test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="\pictures\Picturelf.png" /></td>
+<td><img src="\pictures\Picturert.png" /></td>
+<td><img src="\pictures\Picture2t.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>View the critical values and regions with an α =.05.</p>
+<p>Critical Values for α =.05</p>
+<p><strong>Step 5:</strong> Make a decision about the null hypothesis.</p>
+<p>Check to see if the value of the test statistic falls in the rejection region. If it does, then reject <span class="math inline">\(H_0\)</span> (and conclude <span class="math inline">\(H_a\)</span>). If it does not fall in the rejection region, do not reject <span class="math inline">\(H_0\)</span>.</p>
+<p><strong>Step 6:</strong> State an overall conclusion.</p>
+<p><strong>P-Value Approach</strong></p>
+<p><strong>Step 4:</strong> Compute the appropriate p-value based on our alternative hypothesis.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Left-Tailed</th>
+<th>Right-Tailed</th>
+<th>Two-Tailed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P(Z≤z^*)\)</span></td>
+<td><span class="math inline">\(P(Z≥z^*)\)</span></td>
+<td><span class="math inline">\(2×P(Z≥|z^* |)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 5:</strong> Make a decision about the null hypotheses.</p>
+<p>If the p-value is less than the significance level, then reject the null hypothesis. If the p-value is greater than the significance level, fail to reject the null hypothesis.</p>
+<p><strong>Step 6:</strong> State an overall conclusion.</p>
+<p>Note! Recall that the P-value is a probability of obtaining a value of the test statistic or a more extreme value of the test statistic assuming that the null hypothesis is true.</p>
+<p><strong>Example</strong>: Bauchi State Students from BASUG
+Referring back to example above Say we take a random sample of 500 Bauchi State students and find that 278 are from Bauchi. Can we conclude that the proportion is larger than 0.5 at a 5% level of significance?
+Conduct the test using both the rejection region and p-value approach.</p>
+<p><strong>Answer</strong></p>
+<p><strong>Step 1:</strong> Set up the hypotheses and check conditions.</p>
+<p>Set up the hypotheses. Since the research hypothesis is to check whether the proportion is greater than 0.5 we set it up as a one (right)-tailed test:</p>
+<p><span class="math display">\[H_0:p=0.5 \ vs \ H_a:p&gt;0.5\]</span></p>
+<p>Can we use the z-test statistic? The answer is yes since the hypothesized value <span class="math inline">\(p_0\)</span> is 0.5 and we can check that:
+<span class="math display">\[
+np_0 = 500(0.5)=250≥5 \\  
+and \ n(1-p_0)=500(1-0.5)=250≥5
+\]</span></p>
+<p><strong>Step 2:</strong> Decide on the significance level, α.</p>
+<p>According to the question, α =0.05.</p>
+<p><strong>Step 3:</strong> Calculate the test statistic:</p>
+<p>[z^*= \</p>
+<p>\</p>
+<p>z^*=2.504
+]</p>
+<p><strong>Rejection Region Approach</strong></p>
+<p><strong>Step 4:</strong> Find the appropriate critical values for the test using the z-table. Write down clearly the rejection region for the problem.</p>
+<p>We can use the standard normal table to find the value of <span class="math inline">\(Z_0.05\)</span>. From the table, <span class="math inline">\(Z_0.05\)</span> is found to be 1.645 and thus the critical value is 1.645. The rejection region for the right-tailed test is given by:</p>
+<p><span class="math inline">\(z^*&gt;1.645\)</span></p>
+<p><strong>Step 5:</strong> Make a decision about the null hypothesis.</p>
+<p>The test statistic or the observed Z-value is 2.504. Since <span class="math inline">\(z^*\)</span> falls within the rejection region, we reject <span class="math inline">\(H_0\)</span>.</p>
+<p><strong>Step 6:</strong> State an overall conclusion.</p>
+<p>With a test statistic of 2.504 and critical value of 1.645 at a 5% level of significance, we have enough statistical evidence to reject the null hypothesis. We conclude that a majority of the students are from Bauchi.</p>
+<p><strong>P-Value Approach</strong></p>
+<p><strong>Step 4:</strong> Compute the appropriate p-value based on our alternative hypothesis:</p>
+<p><span class="math display">\[p-value= P(Z≤z^* )=P(Z≤2.504)=0.0062\]</span></p>
+<p><strong>Step 5:</strong> Make a decision about the null hypothesis.
+Since <span class="math inline">\(p-value=0.0062≤0.05\)</span> (the α value), we reject the null hypothesis.</p>
+<p><strong>Step 6:</strong> State an overall conclusion.</p>
+<p>With a test statistic of 2.504 and p-value of 0.0062, we reject the null hypothesis at a 5% level of significance. We conclude that a majority of the students are from Bauchi.</p>
+<p><strong>Exercise</strong></p>
+<p><strong>Online Purchases</strong>
+An e-commerce research company claims that 60% or more graduate students have bought merchandise online. A consumer group is suspicious of the claim and thinks that the proportion is lower than 60%. A random sample of 80 graduate students shows that only 22 students have ever done so. Is there enough evidence to show that the true proportion is lower than 60%?
+Conduct the test at 10% Type I error rate and use the p-value and rejection region approaches.</p>
+<p>6.2 Sample Size
+Overview
+So far, in this section, we have focused on using a random sample of size n to find an interval estimate for a variety of population parameters, including a mean μ, a proportion p, and a standard deviation σ. In none of our discussions did we talk about how large a sample should be in order to ensure that the interval estimate we obtain is narrow enough to be worthwhile. That’s what we’ll do in this lesson!</p>
+<p>6.2 - Estimating a Mean
+Example 6.2
+A researcher wants to estimate μ, the mean systolic blood pressure of adult Americans, with 95% confidence and error ϵ no larger than 3 mm Hg. How many adult Americans, n, should the researcher randomly sample to achieve her estimation goal?
+Answer
+The researcher’s goal is to estimate μ so that the error is no larger than 3 mm Hg. (By the way, ϵ is typically called the maximum error of the estimate.) That is, her goal is to calculate a 95% confidence interval such that:
+x ̅±ϵ=x ̅±3
+Now, we know the formula for a (1− α)100% confidence interval for a population mean μ is:
+x ̅±t_(α/2,n-1) (s/√n)
+So, it seems that a reasonable way to proceed would be to equate the terms appearing after each of the above ± signs, and solve for n. That is, equate:
+ϵ=t_(α/2,n-1) (s/√n)
+and solve for n. Multiplying through by the square root of n, we get:
+√(ϵ&amp;n)=t_(α/2,n-1) (s)
+And, dividing through by ϵ and squaring both sides, we get:
+n=((t_(α/2,n-1) )^2 s<sup>2)/ϵ</sup>2
+Now, what’s wrong with the formula we derived? Well… the t -value on the right side of the equation depends on n.
+That’s not particularly helpful given that we are trying to find n! We can solve that problem by simply replacing the t -value that depends on n with a Z -value that doesn’t. After all, you might recall that as n increases, the t -distribution approaches the standard normal distribution. Doing so, we get:
+n≈((z_(α/2)^2 ) s<sup>2)/ϵ</sup>2<br />
+Before we make the calculation for our particular example, let’s take a step back and summarize what we have just learned.</p>
+<p>Estimating a population mean μ
+The sample size necessary for estimating a population mean μ with (1− α)100% confidence and error no larger than ϵ is:
+n=((z_(α/2)^2 ) s<sup>2)/ϵ</sup>2
+Typically, the hardest part of determining the necessary sample size is finding s^2, that is, a decent estimate of the population variance. There are a few ways of obtaining s^2.
+Ways to Determine s^2
+You can often get s^2, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you’re in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you’ll probably be able to find it in a research paper reported in some scientific journal.
+You can often get s^2, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or… whatever you’re measuring).
+You can often get s^2, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
+x ̅±2s
+Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of s:</p>
+
 </div>
 </div>
             </section>
