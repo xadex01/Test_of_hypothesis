@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Test of Hypothesis for Efficiency | Test of Hypothesis II</title>
+  <meta name="description" content="Chapter 3 Test of Hypothesis for Efficiency | Test of Hypothesis II" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Test of Hypothesis for Efficiency | Test of Hypothesis II" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Test of Hypothesis for Efficiency | Test of Hypothesis II" />
+  
+  
+  
+
+<meta name="author" content="AbdulHafiz Abba" />
+
+
+<meta name="date" content="2024-03-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estimating-a-mean.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Test of Hypothesis</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUCTION TO HYPOTHESIS TESTING</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#basic-terms"><i class="fa fa-check"></i><b>1.1</b> Basic Terms</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#null-hypothesis"><i class="fa fa-check"></i><b>1.1.1</b> Null hypothesis</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#alternative-hypothesis"><i class="fa fa-check"></i><b>1.1.2</b> Alternative hypothesis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing"><i class="fa fa-check"></i><b>1.2</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#types-of-errors"><i class="fa fa-check"></i><b>1.2.1</b> Types of errors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing-1"><i class="fa fa-check"></i><b>1.3</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#set-up-for-one-sample-hypotheses"><i class="fa fa-check"></i><b>1.3.1</b> Set-Up for One-Sample Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#hypothesis-test-for-one-sample-proportion"><i class="fa fa-check"></i><b>1.4</b> Hypothesis Test for One-Sample Proportion</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#making-a-decision"><i class="fa fa-check"></i><b>1.4.1</b> Making a Decision</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#rejection-region-approach"><i class="fa fa-check"></i><b>1.4.2</b> Rejection Region Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#steps-in-conducting-a-hypothesis-test-for-p"><i class="fa fa-check"></i><b>1.5</b> Steps in Conducting a Hypothesis Test for p</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html"><i class="fa fa-check"></i><b>2</b> Estimating a Mean</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-mean-μ"><i class="fa fa-check"></i><b>2.1</b> Estimating a population mean μ</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#ways-to-determine-s2"><i class="fa fa-check"></i><b>2.1.1</b> Ways to Determine <span class="math inline">\(s^2\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#example-1.2-continued"><i class="fa fa-check"></i><b>2.2</b> Example 1.2 (Continued)</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#answer"><i class="fa fa-check"></i><b>2.2.1</b> Answer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#factors-affecting-the-sample-size"><i class="fa fa-check"></i><b>2.3</b> Factors Affecting the Sample Size</a></li>
+<li class="chapter" data-level="2.4" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-proportion-for-a-large-population"><i class="fa fa-check"></i><b>2.4</b> Estimating a Proportion for a Large Population</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-proportion-p"><i class="fa fa-check"></i><b>2.4.1</b> Estimating a population proportion <span class="math inline">\(p\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html"><i class="fa fa-check"></i><b>3</b> Test of Hypothesis for Efficiency</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-example-binomial-distribution"><i class="fa fa-check"></i><b>3.2</b> Hypothesis Testing Example: Binomial Distribution</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#how-to-do-a-binomial-hypothesis-test"><i class="fa fa-check"></i><b>3.2.1</b> How to do a Binomial Hypothesis Test</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-with-the-poisson-distribution"><i class="fa fa-check"></i><b>3.3</b> Hypothesis Testing with the Poisson Distribution</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Test of Hypothesis II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="test-of-hypothesis-for-efficiency" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Test of Hypothesis for Efficiency<a href="test-of-hypothesis-for-efficiency.html#test-of-hypothesis-for-efficiency" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Introduction<a href="test-of-hypothesis-for-efficiency.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In statistics, hypothesis testing is a fundamental concept used to make inferences about population parameters based on sample data. One common application of hypothesis testing is assessing the efficiency of processes or systems. In this lecture, we will delve into the principles of hypothesis testing for efficiency, covering examples from binomial, Poisson, and normal distributions. Additionally, we will explore point and interval estimations to complement our understanding.</p>
+</div>
+<div id="hypothesis-testing-example-binomial-distribution" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Hypothesis Testing Example: Binomial Distribution<a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-example-binomial-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="how-to-do-a-binomial-hypothesis-test" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> How to do a Binomial Hypothesis Test<a href="test-of-hypothesis-for-efficiency.html#how-to-do-a-binomial-hypothesis-test" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Define the parameter in the context of the question – for a binomial hypothesis test the parameter is <span class="math inline">\(p\)</span> which is always the probability of something.</li>
+<li>Write down the null hypothesis and the alternate hypothesis.</li>
+<li>Define the test statistic <span class="math inline">\(X\)</span> in the context of the question.</li>
+<li>Write down the distribution of <span class="math inline">\(X\)</span> under the null hypothesis.</li>
+<li>State the significance level <span class="math inline">\(α\)</span> – even though you are likely given it in the question, not stating it risks losing a mark.</li>
+<li>Test for significance or find the critical region.</li>
+<li>Write a concluding sentence, linking the acceptance or rejection of <span class="math inline">\(H_0\)</span> to the context.</li>
+</ol>
+<p><strong>Example: Flipping a Coin</strong></p>
+<p>Let’s say we are interested in the probability of getting heads exactly 3 times when flipping a fair coin 5 times. Here, <span class="math inline">\(n = 5\)</span> (number of trials) and <span class="math inline">\(p = 0.5\)</span> (probability of success, since the coin is fair).</p>
+<p>We can use the binomial probability formula to calculate this probability:</p>
+<p><span class="math display">\[ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} \]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> is the random variable representing the number of successes (heads in this case),</li>
+<li><span class="math inline">\(k\)</span> is the number of successes we’re interested in (3 heads in this case),</li>
+<li><span class="math inline">\(n\)</span> is the total number of trials (5 flips),</li>
+<li><span class="math inline">\(p\)</span> is the probability of success on each trial (0.5 for a fair coin), and</li>
+<li><span class="math inline">\(\binom{n}{k}\)</span> represents the binomial coefficient, which calculates the number of ways to choose <span class="math inline">\(k\)</span> successes out of <span class="math inline">\(n\)</span> trials.</li>
+</ul>
+<p><strong>Example: Binomial Hypothesis Test</strong></p>
+<p>When Fatima buys lunch during a work day, there is a probability of 0.6 that the shop has her favourite sandwich in stock.
+After only one sandwich being in stock in the last five days, she is certain the probability of sandwiches being in stock has decreased.
+Test, at the 5% significance level, if Edith is correct.</p>
+<p>Define hypotheses:
+H0: p = 0.6
+H1: p &lt; 0.6</p>
+<p><strong>Test statistic:</strong> X is the number of sandwiches in stock over five days.
+Under H0: X ~ B(5, 0.6)</p>
+<p>Significance level: α = 0.05</p>
+<p>Calculate P(X ≤ 1) under H0
+<span class="math display">\[P(X\le1)=0.0870 &gt; 0.05\]</span></p>
+<p>Do not reject <span class="math inline">\(H_0\)</span>. Insufficient evidence to suggest Fatima is correct.</p>
+<p><strong>Example 2</strong></p>
+<p>A disease is moving through a population. On Tuesday, it is believed that nationally around 6% of people have the disease. In the village of Hammerton,5 out of 200 residents have the disease. Test, at the 5% significance level if the prevalence of the disease differs in Hammerton compared to the rest of the country.</p>
+<p><strong>Solution</strong></p>
+<p><span class="math inline">\(p\)</span> is the probability of having the disease.</p>
+<p>Define hypotheses:
+<span class="math inline">\(H0\)</span>: p = 0.06
+<span class="math inline">\(H_1\)</span>: p ≠ 0.06</p>
+<p><strong>Test statistic:</strong> X is the number of people in Hammerton who have the disease.</p>
+<p>Under <span class="math inline">\(H_0\)</span>: X ~ B(200, 0.06)</p>
+<p>Significance level: α = 0.05</p>
+<p>Two-tailed test so we are looking for a probability smaller than 0.05/2 = 0.025</p>
+<p>** Example 3**</p>
+<p>Given: <span class="math inline">\(X \sim B(10,p)\)</span>.</p>
+<ol style="list-style-type: lower-roman">
+<li>Find the Critical Region for a 5% level one tail test on:</li>
+</ol>
+<ul>
+<li>Null hypothesis (<span class="math inline">\(H_0\)</span>): <span class="math inline">\(p = 0.49\)</span></li>
+<li>Alternative hypothesis (<span class="math inline">\(H_1\)</span>): <span class="math inline">\(p &lt; 0.49\)</span></li>
+</ul>
+<ol start="2" style="list-style-type: lower-roman">
+<li>Efan observes <span class="math inline">\(X=2\)</span> while Lzzie observes <span class="math inline">\(X=1\)</span>. Do they reach the same conclusion in a hypothesis test?</li>
+</ol>
+<p><strong>Answer</strong>
+i) <span class="math display">\[P(X=2)=0.0621&gt;0.05\]</span>
+<span class="math display">\[P(X=1)=0.0126 &lt; 0.05\]</span></p>
+<p>So 2 is not in the critical region while 1 is
+Hence, the critical region is <span class="math inline">\(X=0,1\)</span></p>
+<ol start="2" style="list-style-type: lower-roman">
+<li>They reach different conclusions.</li>
+</ol>
+<p>Efan observes a value that lies outside the critical region, so concludes that <span class="math inline">\(H_0\)</span> should not be rejected.</p>
+<p>Izzie observes a value that lies inside the critical region, so concludes that <span class="math inline">\(H_0\)</span>should be rejected.</p>
+<p><strong>Example 3</strong></p>
+<p>A scientist is observing a colony of 20 bacteria. It is believed that the probability of a bacterium splitting is 0.32. If the scientist observes just 2 splitting bacteria, test at the 1% significance level if this believed probability is too high.</p>
+<p><strong>Answer</strong></p>
+<p><span class="math inline">\(p\)</span> is the probability of a bacterium splitting.</p>
+<p><span class="math inline">\(H_0:p = 0.32\)</span>
+<span class="math inline">\(H_1:p &lt;0.32\)</span></p>
+<p>Test statistic <span class="math inline">\(X\)</span> is the number of bacteria that split.
+Under <span class="math inline">\(H_0: X \sim B(20,0.32)\)</span>
+Significance level: <span class="math inline">\(\alpha = 0.01\)</span></p>
+<p><span class="math inline">\(P(X≤2) = 0.0235 &gt;0.01\)</span>
+Do not reject <span class="math inline">\(H_0\)</span>. Insufficient evidence to suggest the probability of splitting is too high.</p>
+</div>
+</div>
+<div id="hypothesis-testing-with-the-poisson-distribution" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Hypothesis Testing with the Poisson Distribution<a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-with-the-poisson-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Testing hypotheses with the Poisson distribution is very similar to testing them with the binomial distribution. If the probability is greater than α, the level of significance, then the null hypothesis is accepted. If it is less than α, we accepted the alternative hypothesis.</p>
+<p><strong>Example</strong>
+An existing make of car is known to break down on average one and a half times per year. A new model is introduced and the manufacturer claims that this model is less likely to break down. Ten randomly selected cars break down a total of eight times within the first year. Test the manufacturer’s claim at a 5% significance level.</p>
+<p><strong>Solution</strong>
+Let X be the number of breakdowns of the new model of car in a year. Since we have an average rate and the data is discrete, we need to use a Poisson distribution. So X ~ Poisson(λ) with λ = 1.5. The null and alternative hypotheses will be:</p>
+<p><span class="math inline">\(H0: λ = 1.5\)</span>
+<span class="math inline">\(H1: λ &lt; 1.5\)</span>.</p>
+<p>We need to decide whether <span class="math inline">\(P[X ≤ 8] &lt; α\)</span>, where <span class="math inline">\(α = 0.05\)</span> is the significance level. Firstly, the expected number of breakdowns <span class="math inline">\(λt = 1.5 × 10 = 15\)</span>. We use the cumulative tables with <span class="math inline">\(λt = 15\)</span> and <span class="math inline">\(x = 8\)</span> to see <span class="math inline">\(P[X ≤ 8] = 0.0374\)</span>.</p>
+<p><span class="math inline">\(P[X ≤ 8] = 0.0374 &lt; 0.05 = α\)</span></p>
+<p>so we accept the alternative hypothesis. The average rate of breakdowns has decreased.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estimating-a-mean.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/edit/main/Chapter-3.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/blob/main/Chapter-3.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

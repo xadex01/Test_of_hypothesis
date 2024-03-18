@@ -23,7 +23,7 @@
 <meta name="author" content="AbdulHafiz Abba" />
 
 
-<meta name="date" content="2024-03-16" />
+<meta name="date" content="2024-03-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 
-<link rel="next" href="the-pool-of-tears.html"/>
+<link rel="next" href="estimating-a-mean.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -98,8 +98,31 @@
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#steps-in-conducting-a-hypothesis-test-for-p"><i class="fa fa-check"></i><b>1.5</b> Steps in Conducting a Hypothesis Test for p</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>2</b> The pool of tears</a></li>
-<li class="chapter" data-level="3" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>3</b> A caucus-race and a long tale</a></li>
+<li class="chapter" data-level="2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html"><i class="fa fa-check"></i><b>2</b> Estimating a Mean</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-mean-μ"><i class="fa fa-check"></i><b>2.1</b> Estimating a population mean μ</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#ways-to-determine-s2"><i class="fa fa-check"></i><b>2.1.1</b> Ways to Determine <span class="math inline">\(s^2\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#example-1.2-continued"><i class="fa fa-check"></i><b>2.2</b> Example 1.2 (Continued)</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#answer"><i class="fa fa-check"></i><b>2.2.1</b> Answer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#factors-affecting-the-sample-size"><i class="fa fa-check"></i><b>2.3</b> Factors Affecting the Sample Size</a></li>
+<li class="chapter" data-level="2.4" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-proportion-for-a-large-population"><i class="fa fa-check"></i><b>2.4</b> Estimating a Proportion for a Large Population</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-proportion-p"><i class="fa fa-check"></i><b>2.4.1</b> Estimating a population proportion <span class="math inline">\(p\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html"><i class="fa fa-check"></i><b>3</b> Test of Hypothesis for Efficiency</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-example-binomial-distribution"><i class="fa fa-check"></i><b>3.2</b> Hypothesis Testing Example: Binomial Distribution</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#how-to-do-a-binomial-hypothesis-test"><i class="fa fa-check"></i><b>3.2.1</b> How to do a Binomial Hypothesis Test</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-with-the-poisson-distribution"><i class="fa fa-check"></i><b>3.3</b> Hypothesis Testing with the Poisson Distribution</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -122,7 +145,7 @@
 <div id="header">
 <h1 class="title">Test of Hypothesis II</h1>
 <p class="author"><em>AbdulHafiz Abba</em></p>
-<p class="date"><em>2024-03-16</em></p>
+<p class="date"><em>2024-03-18</em></p>
 </div>
 <div id="introduction-to-hypothesis-testing" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> INTRODUCTION TO HYPOTHESIS TESTING<a href="index.html#introduction-to-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -358,16 +381,16 @@ Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject 
 <p><strong>Left-Tailed Test</strong></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if the test statistics is <strong>less than or equal to</strong> the critical value <span class="math inline">\((c_α)\)</span></p>
 <div class="figure">
-<img src="\pictures\Picture1.png" alt="" />
+<img src="pictures/Picture1.png" alt="" />
 <p class="caption">Left Tailed</p>
 </div>
 <p><strong>Right-Tailed Test</strong></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if the test statistic is <strong>greater than or equal to</strong> the critical value <span class="math inline">\((c_{1-α})\)</span></p>
-<p><img src="\pictures\Picture2.png" alt="Right Tailed" />
+<p><img src="pictures/Picture2.png" alt="Right Tailed" />
 <strong>Two-Tailed Test</strong></p>
 <p>Reject H_0 if the absolute value of the test statistic is greater than or equal to the absolute value of the critical value <span class="math inline">\((c_{(α/2)})\)</span>.</p>
 <div class="figure">
-<img src="\pictures\Picture3.png" alt="" />
+<img src="pictures/Picture3.png" alt="" />
 <p class="caption">Two Tailed</p>
 </div>
 <p><strong>P-Value Approach</strong></p>
@@ -454,9 +477,9 @@ Fail \ to \ reject \ H_0 &amp; Correct \ decision &amp; \text{Failing to reject 
 </thead>
 <tbody>
 <tr class="odd">
-<td><img src="\pictures\Picturelf.png" /></td>
-<td><img src="\pictures\Picturert.png" /></td>
-<td><img src="\pictures\Picture2t.png" /></td>
+<td><img src="pictures/Picturelf.png" /></td>
+<td><img src="pictures/Picturert.png" /></td>
+<td><img src="pictures/Picture2t.png" /></td>
 </tr>
 </tbody>
 </table>
@@ -502,10 +525,10 @@ and \ n(1-p_0)=500(1-0.5)=250≥5
 <p><strong>Step 2:</strong> Decide on the significance level, α.</p>
 <p>According to the question, α =0.05.</p>
 <p><strong>Step 3:</strong> Calculate the test statistic:</p>
-<p>[z^*= \</p>
-<p>\</p>
-<p>z^*=2.504
-]</p>
+<p><span class="math display">\[z^*= \frac{(0.556-0.5)}{\sqrt{(0.5(1-0.5)/500}}\]</span></p>
+<p><span class="math display">\[
+z^*=2.504
+\]</span></p>
 <p><strong>Rejection Region Approach</strong></p>
 <p><strong>Step 4:</strong> Find the appropriate critical values for the test using the z-table. Write down clearly the rejection region for the problem.</p>
 <p>We can use the standard normal table to find the value of <span class="math inline">\(Z_0.05\)</span>. From the table, <span class="math inline">\(Z_0.05\)</span> is found to be 1.645 and thus the critical value is 1.645. The rejection region for the right-tailed test is given by:</p>
@@ -522,40 +545,11 @@ Since <span class="math inline">\(p-value=0.0062≤0.05\)</span> (the α value),
 <p><strong>Step 6:</strong> State an overall conclusion.</p>
 <p>With a test statistic of 2.504 and p-value of 0.0062, we reject the null hypothesis at a 5% level of significance. We conclude that a majority of the students are from Bauchi.</p>
 <p><strong>Exercise</strong></p>
-<p><strong>Online Purchases</strong>
-An e-commerce research company claims that 60% or more graduate students have bought merchandise online. A consumer group is suspicious of the claim and thinks that the proportion is lower than 60%. A random sample of 80 graduate students shows that only 22 students have ever done so. Is there enough evidence to show that the true proportion is lower than 60%?
-Conduct the test at 10% Type I error rate and use the p-value and rejection region approaches.</p>
-<p>6.2 Sample Size
-Overview
-So far, in this section, we have focused on using a random sample of size n to find an interval estimate for a variety of population parameters, including a mean μ, a proportion p, and a standard deviation σ. In none of our discussions did we talk about how large a sample should be in order to ensure that the interval estimate we obtain is narrow enough to be worthwhile. That’s what we’ll do in this lesson!</p>
-<p>6.2 - Estimating a Mean
-Example 6.2
-A researcher wants to estimate μ, the mean systolic blood pressure of adult Americans, with 95% confidence and error ϵ no larger than 3 mm Hg. How many adult Americans, n, should the researcher randomly sample to achieve her estimation goal?
-Answer
-The researcher’s goal is to estimate μ so that the error is no larger than 3 mm Hg. (By the way, ϵ is typically called the maximum error of the estimate.) That is, her goal is to calculate a 95% confidence interval such that:
-x ̅±ϵ=x ̅±3
-Now, we know the formula for a (1− α)100% confidence interval for a population mean μ is:
-x ̅±t_(α/2,n-1) (s/√n)
-So, it seems that a reasonable way to proceed would be to equate the terms appearing after each of the above ± signs, and solve for n. That is, equate:
-ϵ=t_(α/2,n-1) (s/√n)
-and solve for n. Multiplying through by the square root of n, we get:
-√(ϵ&amp;n)=t_(α/2,n-1) (s)
-And, dividing through by ϵ and squaring both sides, we get:
-n=((t_(α/2,n-1) )^2 s<sup>2)/ϵ</sup>2
-Now, what’s wrong with the formula we derived? Well… the t -value on the right side of the equation depends on n.
-That’s not particularly helpful given that we are trying to find n! We can solve that problem by simply replacing the t -value that depends on n with a Z -value that doesn’t. After all, you might recall that as n increases, the t -distribution approaches the standard normal distribution. Doing so, we get:
-n≈((z_(α/2)^2 ) s<sup>2)/ϵ</sup>2<br />
-Before we make the calculation for our particular example, let’s take a step back and summarize what we have just learned.</p>
-<p>Estimating a population mean μ
-The sample size necessary for estimating a population mean μ with (1− α)100% confidence and error no larger than ϵ is:
-n=((z_(α/2)^2 ) s<sup>2)/ϵ</sup>2
-Typically, the hardest part of determining the necessary sample size is finding s^2, that is, a decent estimate of the population variance. There are a few ways of obtaining s^2.
-Ways to Determine s^2
-You can often get s^2, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you’re in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you’ll probably be able to find it in a research paper reported in some scientific journal.
-You can often get s^2, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or… whatever you’re measuring).
-You can often get s^2, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
-x ̅±2s
-Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of s:</p>
+<p><strong>Online Purchases</strong></p>
+<p>An e-commerce research company claims that 60% or more graduate students have bought merchandise online. A consumer group is suspicious of the claim and thinks that the proportion is lower than 60%. A random sample of 80 graduate students shows that only 22 students have ever done so. Is there enough evidence to show that the true proportion is lower than 60%?</p>
+<p>Conduct the test at 10% Type I error rate and use the p-value and rejection region approaches.</p>
+<p><strong>Sample Size</strong></p>
+<p>So far, in this section, we have focused on using a random sample of size n to find an interval estimate for a variety of population parameters, including a mean μ, a proportion p, and a standard deviation σ. In none of our discussions did we talk about how large a sample should be in order to ensure that the interval estimate we obtain is narrow enough to be worthwhile. That’s what we’ll do in this lesson!</p>
 
 </div>
 </div>
@@ -565,7 +559,7 @@ Here’s a picture that illustrates how this part of the Empirical Rule can help
         </div>
       </div>
 
-<a href="the-pool-of-tears.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="estimating-a-mean.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -316,19 +316,19 @@ The rejection region is the region where, if our test statistic falls, then we h
 
 Reject $H_0$ if the test statistics is **less than or equal to** the critical value $(c_α)$
 
-![Left Tailed](\pictures\Picture1.png)
+![Left Tailed](pictures/Picture1.png)
 
 **Right-Tailed Test**
 
 Reject $H_0$ if the test statistic is **greater than or equal to** the critical value $(c_{1-α})$
 
 
-![Right Tailed](\pictures\Picture2.png)
+![Right Tailed](pictures/Picture2.png)
 **Two-Tailed Test**
 
 Reject H_0 if the absolute value of the test statistic is greater than or equal to the absolute value of the critical value $(c_{(α/2)})$.
 
-![Two Tailed](\pictures\Picture3.png)
+![Two Tailed](pictures/Picture3.png)
 
 **P-Value Approach**
 
@@ -399,7 +399,7 @@ The next part will discuss steps 4 - 6 for both approaches.
 
 |Left-Tailed Test | Right-Tailed Test | 	Two-Tailed Test |
 |-----------------|-------------------|--------------------|
-|![](\pictures\Picturelf.png) | ![](\pictures\Picturert.png) | ![](\pictures\Picture2t.png) |
+|![](pictures/Picturelf.png) | ![](pictures/Picturert.png) | ![](pictures/Picture2t.png) |
 
 
 View the critical values and regions with an α =.05.
@@ -455,10 +455,9 @@ According to the question, α =0.05.
 
 **Step 3:** Calculate the test statistic:
 
-\[z^*= \frac{(0.556-0.5)}{\sqrt{(0.5(1-0.5)/500}} \\
+\[z^*= \frac{(0.556-0.5)}{\sqrt{(0.5(1-0.5)/500}}\]
 
-\\
-
+\[
 z^*=2.504
 \]
 
@@ -496,43 +495,12 @@ With a test statistic of 2.504 and p-value of 0.0062, we reject the null hypothe
 **Exercise**
 
 **Online Purchases**
+
 An e-commerce research company claims that 60% or more graduate students have bought merchandise online. A consumer group is suspicious of the claim and thinks that the proportion is lower than 60%. A random sample of 80 graduate students shows that only 22 students have ever done so. Is there enough evidence to show that the true proportion is lower than 60%?
+
 Conduct the test at 10% Type I error rate and use the p-value and rejection region approaches.
 
-6.2 Sample Size
-Overview
+**Sample Size**
+
 So far, in this section, we have focused on using a random sample of size n to find an interval estimate for a variety of population parameters, including a mean μ, a proportion p, and a standard deviation σ. In none of our discussions did we talk about how large a sample should be in order to ensure that the interval estimate we obtain is narrow enough to be worthwhile. That's what we'll do in this lesson!
-
-6.2 - Estimating a Mean
-Example 6.2
-A researcher wants to estimate μ, the mean systolic blood pressure of adult Americans, with 95% confidence and error ϵ no larger than 3 mm Hg. How many adult Americans, n, should the researcher randomly sample to achieve her estimation goal?
-Answer
-The researcher's goal is to estimate μ so that the error is no larger than 3 mm Hg. (By the way, ϵ is typically called the maximum error of the estimate.) That is, her goal is to calculate a 95% confidence interval such that:
-x ̅±ϵ=x ̅±3
-Now, we know the formula for a (1− α)100% confidence interval for a population mean μ is:
-x ̅±t_(α/2,n-1) (s/√n)
-So, it seems that a reasonable way to proceed would be to equate the terms appearing after each of the above ± signs, and solve for n. That is, equate:
-ϵ=t_(α/2,n-1) (s/√n)
-and solve for n. Multiplying through by the square root of n, we get:
-√(ϵ&n)=t_(α/2,n-1) (s)
-And, dividing through by ϵ and squaring both sides, we get:
-n=((t_(α/2,n-1) )^2 s^2)/ϵ^2 
-Now, what's wrong with the formula we derived? Well... the t -value on the right side of the equation depends on n.
-That's not particularly helpful given that we are trying to find n! We can solve that problem by simply replacing the t -value that depends on n with a Z -value that doesn't. After all, you might recall that as n increases, the t -distribution approaches the standard normal distribution. Doing so, we get:
-n≈((z_(α/2)^2 ) s^2)/ϵ^2  
-Before we make the calculation for our particular example, let's take a step back and summarize what we have just learned.
-
-Estimating a population mean μ
-The sample size necessary for estimating a population mean μ with (1− α)100% confidence and error no larger than ϵ is:
-n=((z_(α/2)^2 ) s^2)/ϵ^2 
-Typically, the hardest part of determining the necessary sample size is finding s^2, that is, a decent estimate of the population variance. There are a few ways of obtaining s^2.
-Ways to Determine s^2
-You can often get s^2, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you're in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you'll probably be able to find it in a research paper reported in some scientific journal.
-You can often get s^2, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or... whatever you're measuring).
-You can often get s^2, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
-x ̅±2s
-Here's a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of s:
-
-
-
 

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Estimating a population mean μ | Test of Hypothesis II</title>
+  <meta name="description" content="Chapter 2 Estimating a population mean μ | Test of Hypothesis II" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Estimating a population mean μ | Test of Hypothesis II" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Estimating a population mean μ | Test of Hypothesis II" />
+  
+  
+  
+
+<meta name="author" content="AbdulHafiz Abba" />
+
+
+<meta name="date" content="2024-03-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="the-pool-of-tears.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Test of Hypothesis</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUCTION TO HYPOTHESIS TESTING</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#basic-terms"><i class="fa fa-check"></i><b>1.1</b> Basic Terms</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#null-hypothesis"><i class="fa fa-check"></i><b>1.1.1</b> Null hypothesis</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#alternative-hypothesis"><i class="fa fa-check"></i><b>1.1.2</b> Alternative hypothesis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing"><i class="fa fa-check"></i><b>1.2</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#types-of-errors"><i class="fa fa-check"></i><b>1.2.1</b> Types of errors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing-1"><i class="fa fa-check"></i><b>1.3</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#set-up-for-one-sample-hypotheses"><i class="fa fa-check"></i><b>1.3.1</b> Set-Up for One-Sample Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#hypothesis-test-for-one-sample-proportion"><i class="fa fa-check"></i><b>1.4</b> Hypothesis Test for One-Sample Proportion</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#making-a-decision"><i class="fa fa-check"></i><b>1.4.1</b> Making a Decision</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#rejection-region-approach"><i class="fa fa-check"></i><b>1.4.2</b> Rejection Region Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#steps-in-conducting-a-hypothesis-test-for-p"><i class="fa fa-check"></i><b>1.5</b> Steps in Conducting a Hypothesis Test for p</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-a-population-mean-μ.html"><a href="estimating-a-population-mean-μ.html"><i class="fa fa-check"></i><b>2</b> Estimating a population mean μ</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-a-population-mean-μ.html"><a href="estimating-a-population-mean-μ.html#ways-to-determine-s2"><i class="fa fa-check"></i><b>2.1</b> Ways to Determine <span class="math inline">\(s^2\)</span></a></li>
+<li class="chapter" data-level="2.2" data-path="estimating-a-population-mean-μ.html"><a href="estimating-a-population-mean-μ.html#example-1.2-continued"><i class="fa fa-check"></i><b>2.2</b> Example 1.2 (Continued)</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-a-population-mean-μ.html"><a href="estimating-a-population-mean-μ.html#answer"><i class="fa fa-check"></i><b>2.2.1</b> Answer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-pool-of-tears.html"><a href="the-pool-of-tears.html"><i class="fa fa-check"></i><b>3</b> The pool of tears</a></li>
+<li class="chapter" data-level="4" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>4</b> A caucus-race and a long tale</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Test of Hypothesis II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimating-a-population-mean-μ" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Estimating a population mean μ<a href="estimating-a-population-mean-μ.html#estimating-a-population-mean-μ" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The sample size necessary for estimating a population mean μ with <span class="math inline">\((1 - \alpha)100\%\)</span> confidence and error no larger than <span class="math inline">\(\epsilon\)</span> is given by:</p>
+<p><span class="math display">\[ n = \frac{(z_{(\alpha/2)}^2 \cdot s^2)}{\epsilon^2} \]</span></p>
+<p>Typically, the hardest part of determining the necessary sample size is finding <span class="math inline">\(s^2\)</span>, that is, a decent estimate of the population variance. There are a few ways of obtaining <span class="math inline">\(s^2\)</span>.</p>
+<div id="ways-to-determine-s2" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ways to Determine <span class="math inline">\(s^2\)</span><a href="estimating-a-population-mean-μ.html#ways-to-determine-s2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you’re in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you’ll probably be able to find it in a research paper reported in some scientific journal.</p></li>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or… whatever you’re measuring).</p></li>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
+<span class="math display">\[ \bar{x} \pm 2s \]</span></p>
+<p>Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of <span class="math inline">\(s\)</span>:</p>
+<div class="figure">
+<img src="pictures/Picture5.png" alt="" />
+<p class="caption">Empirical Rule Image 1</p>
+</div>
+<p>That is, we could define the range of values as that which captures 95% of the measurements. If we do that, then we can work backwards to see that <span class="math inline">\(s\)</span> can be determined by dividing the range by 4. That is:
+<span class="math display">\[ s = \frac{\text{Range}}{4} = \frac{\text{Max} - \text{Min}}{4} \]</span></p>
+<p>When statisticians use the Empirical Rule to help a researcher arrive at a reasonable value of <span class="math inline">\(s\)</span>, they almost always use the above formula. That said, there may be occasions in which it is worthwhile using another part of the Empirical Rule, namely that we can expect 99.7% of the observations to fall in the interval:
+<span class="math display">\[ \bar{x} \pm 3s \]</span></p>
+<p>Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of <span class="math inline">\(s\)</span>:</p>
+<div class="figure">
+<img src="pictures/Picture6.png" alt="" />
+<p class="caption">Empirical Rule Image 2</p>
+</div>
+<p>In this case, we could define the range of values as that which captures 99.7% of the measurements. If we do that, then we can work backwards to see that <span class="math inline">\(s\)</span> can be determined by dividing the range by 6. That is:
+<span class="math display">\[ s = \frac{\text{Range}}{6} = \frac{\text{Max} - \text{Min}}{6} \]</span></p></li>
+</ul>
+</div>
+<div id="example-1.2-continued" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Example 1.2 (Continued)<a href="estimating-a-population-mean-μ.html#example-1.2-continued" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A researcher wants to estimate <span class="math inline">\(\mu\)</span>, the mean systolic blood pressure of adult Americans, with 95% confidence and error <span class="math inline">\(\epsilon\)</span> no larger than 3 mm Hg. How many adult Americans, <span class="math inline">\(n\)</span>, should the researcher randomly sample to achieve her estimation goal?</p>
+<div id="answer" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Answer<a href="estimating-a-population-mean-μ.html#answer" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If the maximum error <span class="math inline">\(\epsilon\)</span> is 3, and the sample variance is <span class="math inline">\(s^2 = 10^2\)</span>, we need:</p>
+<p><span class="math display">\[ n = \frac{(1.96)^2 \cdot (10)^2}{3^2} = 42.7 \]</span></p>
+<p>or 43 people to estimate <span class="math inline">\(\mu\)</span> with 95% confidence. In general, when making sample size calculations such as this one, it is a good idea to change all of the factors to see what the “cost” in sample size is for achieving certain errors <span class="math inline">\(\epsilon\)</span> and confidence levels <span class="math inline">\((1 - \alpha)\)</span>. Doing that here, we get:</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-pool-of-tears.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/edit/main/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/blob/main/index.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

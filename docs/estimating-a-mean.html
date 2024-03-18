@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Estimating a Mean | Test of Hypothesis II</title>
+  <meta name="description" content="Chapter 2 Estimating a Mean | Test of Hypothesis II" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Estimating a Mean | Test of Hypothesis II" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Estimating a Mean | Test of Hypothesis II" />
+  
+  
+  
+
+<meta name="author" content="AbdulHafiz Abba" />
+
+
+<meta name="date" content="2024-03-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="test-of-hypothesis-for-efficiency.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Test of Hypothesis</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> INTRODUCTION TO HYPOTHESIS TESTING</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#basic-terms"><i class="fa fa-check"></i><b>1.1</b> Basic Terms</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#null-hypothesis"><i class="fa fa-check"></i><b>1.1.1</b> Null hypothesis</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#alternative-hypothesis"><i class="fa fa-check"></i><b>1.1.2</b> Alternative hypothesis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing"><i class="fa fa-check"></i><b>1.2</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#types-of-errors"><i class="fa fa-check"></i><b>1.2.1</b> Types of errors</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#the-logic-of-hypothesis-testing-1"><i class="fa fa-check"></i><b>1.3</b> The Logic of Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#set-up-for-one-sample-hypotheses"><i class="fa fa-check"></i><b>1.3.1</b> Set-Up for One-Sample Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#hypothesis-test-for-one-sample-proportion"><i class="fa fa-check"></i><b>1.4</b> Hypothesis Test for One-Sample Proportion</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#making-a-decision"><i class="fa fa-check"></i><b>1.4.1</b> Making a Decision</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#rejection-region-approach"><i class="fa fa-check"></i><b>1.4.2</b> Rejection Region Approach</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#steps-in-conducting-a-hypothesis-test-for-p"><i class="fa fa-check"></i><b>1.5</b> Steps in Conducting a Hypothesis Test for p</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html"><i class="fa fa-check"></i><b>2</b> Estimating a Mean</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-mean-μ"><i class="fa fa-check"></i><b>2.1</b> Estimating a population mean μ</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#ways-to-determine-s2"><i class="fa fa-check"></i><b>2.1.1</b> Ways to Determine <span class="math inline">\(s^2\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#example-1.2-continued"><i class="fa fa-check"></i><b>2.2</b> Example 1.2 (Continued)</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#answer"><i class="fa fa-check"></i><b>2.2.1</b> Answer</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#factors-affecting-the-sample-size"><i class="fa fa-check"></i><b>2.3</b> Factors Affecting the Sample Size</a></li>
+<li class="chapter" data-level="2.4" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-proportion-for-a-large-population"><i class="fa fa-check"></i><b>2.4</b> Estimating a Proportion for a Large Population</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="estimating-a-mean.html"><a href="estimating-a-mean.html#estimating-a-population-proportion-p"><i class="fa fa-check"></i><b>2.4.1</b> Estimating a population proportion <span class="math inline">\(p\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html"><i class="fa fa-check"></i><b>3</b> Test of Hypothesis for Efficiency</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-example-binomial-distribution"><i class="fa fa-check"></i><b>3.2</b> Hypothesis Testing Example: Binomial Distribution</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#how-to-do-a-binomial-hypothesis-test"><i class="fa fa-check"></i><b>3.2.1</b> How to do a Binomial Hypothesis Test</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="test-of-hypothesis-for-efficiency.html"><a href="test-of-hypothesis-for-efficiency.html#hypothesis-testing-with-the-poisson-distribution"><i class="fa fa-check"></i><b>3.3</b> Hypothesis Testing with the Poisson Distribution</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Test of Hypothesis II</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimating-a-mean" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Estimating a Mean<a href="estimating-a-mean.html#estimating-a-mean" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong>Example</strong></p>
+<p>A researcher wants to estimate μ, the mean systolic blood pressure of adult Americans, with 95% confidence and error ϵ no larger than 3 mm Hg. How many adult Americans, n, should the researcher randomly sample to achieve her estimation goal?</p>
+<p><strong>Answer</strong></p>
+<p>The researcher’s goal is to estimate μ so that the error is no larger than 3 mm Hg. (By the way, ϵ is typically called the maximum error of the estimate.) That is, her goal is to calculate a 95% confidence interval such that:</p>
+<p><span class="math display">\[x ̅±ϵ=x ̅±3\]</span></p>
+<p>Now, we know the formula for a <span class="math inline">\((1− α)100%\)</span> confidence interval for a population mean μ is:</p>
+<p><span class="math display">\[\bar{x} \pm t_{(α/2,n-1)} (s/√n)\]</span></p>
+<p>So, it seems that a reasonable way to proceed would be to equate the terms appearing after each of the above ± signs, and solve for n. That is, equate:</p>
+<p><span class="math display">\[ϵ=t_{(α/2,n-1)} (s/√n)\]</span></p>
+<p>and solve for n. Multiplying through by the square root of n, we get:</p>
+<p><span class="math display">\[ ϵ\sqrt{n} =t_{(α/2,n-1)} (s)\]</span></p>
+<p>And, dividing through by ϵ and squaring both sides, we get:</p>
+<p><span class="math display">\[n=\frac{\left( t_{\frac{\alpha}{2},n-1}\right)^2s^2}{ϵ^2} \]</span></p>
+<p>Now, what’s wrong with the formula we derived? Well… the t -value on the right side of the equation depends on n.</p>
+<p>That’s not particularly helpful given that we are trying to find n! We can solve that problem by simply replacing the t -value that depends on n with a Z -value that doesn’t. After all, you might recall that as n increases, the t -distribution approaches the standard normal distribution. Doing so, we get:</p>
+<p><span class="math display">\[n≈\frac{(z_{α/2}^2 ) s^2}{ϵ^2}\]</span></p>
+<p>Before we make the calculation for our particular example, let’s take a step back and summarize what we have just learned.</p>
+<div id="estimating-a-population-mean-μ" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Estimating a population mean μ<a href="estimating-a-mean.html#estimating-a-population-mean-μ" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The sample size necessary for estimating a population mean μ with <span class="math inline">\((1 - \alpha)100\%\)</span> confidence and error no larger than <span class="math inline">\(\epsilon\)</span> is given by:</p>
+<p><span class="math display">\[ n = \frac{(z_{(\alpha/2)}^2 \cdot s^2)}{\epsilon^2} \]</span></p>
+<p>Typically, the hardest part of determining the necessary sample size is finding <span class="math inline">\(s^2\)</span>, that is, a decent estimate of the population variance. There are a few ways of obtaining <span class="math inline">\(s^2\)</span>.</p>
+<div id="ways-to-determine-s2" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Ways to Determine <span class="math inline">\(s^2\)</span><a href="estimating-a-mean.html#ways-to-determine-s2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance from the scientific literature. After all, scientific research is typically not done in a vacuum. That is, what one researcher is studying and reporting in scientific journals is typically also studied and reported by several other researchers in various locations around the world. If you’re in need of an estimate of the variance of the front leg length of red-eyed tree frogs, you’ll probably be able to find it in a research paper reported in some scientific journal.</p></li>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance by conducting a small pilot study on 5-10 people (or trees or snakes or… whatever you’re measuring).</p></li>
+<li><p>You can often get <span class="math inline">\(s^2\)</span>, an estimate of the population variance by using what we know about the Empirical Rule, which states that we can expect 95% of the observations to fall in the interval:
+<span class="math display">\[ \bar{x} \pm 2s \]</span></p>
+<p>Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of <span class="math inline">\(s\)</span>:</p>
+<div class="figure">
+<img src="pictures/Picture5.png" alt="" />
+<p class="caption">Empirical Rule Image 1</p>
+</div>
+<p>That is, we could define the range of values as that which captures 95% of the measurements. If we do that, then we can work backwards to see that <span class="math inline">\(s\)</span> can be determined by dividing the range by 4. That is:
+<span class="math display">\[ s = \frac{\text{Range}}{4} = \frac{\text{Max} - \text{Min}}{4} \]</span></p>
+<p>When statisticians use the Empirical Rule to help a researcher arrive at a reasonable value of <span class="math inline">\(s\)</span>, they almost always use the above formula. That said, there may be occasions in which it is worthwhile using another part of the Empirical Rule, namely that we can expect 99.7% of the observations to fall in the interval:
+<span class="math display">\[ \bar{x} \pm 3s \]</span></p>
+<p>Here’s a picture that illustrates how this part of the Empirical Rule can help us determine a reasonable value of <span class="math inline">\(s\)</span>:</p>
+<div class="figure">
+<img src="pictures/Picture6.png" alt="" />
+<p class="caption">Empirical Rule Image 2</p>
+</div>
+<p>In this case, we could define the range of values as that which captures 99.7% of the measurements. If we do that, then we can work backwards to see that <span class="math inline">\(s\)</span> can be determined by dividing the range by 6. That is:
+<span class="math display">\[ s = \frac{\text{Range}}{6} = \frac{\text{Max} - \text{Min}}{6} \]</span></p></li>
+</ul>
+</div>
+</div>
+<div id="example-1.2-continued" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Example 1.2 (Continued)<a href="estimating-a-mean.html#example-1.2-continued" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A researcher wants to estimate <span class="math inline">\(\mu\)</span>, the mean systolic blood pressure of adult Americans, with 95% confidence and error <span class="math inline">\(\epsilon\)</span> no larger than 3 mm Hg. How many adult Americans, <span class="math inline">\(n\)</span>, should the researcher randomly sample to achieve her estimation goal?</p>
+<div id="answer" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Answer<a href="estimating-a-mean.html#answer" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If the maximum error <span class="math inline">\(\epsilon\)</span> is 3, and the sample variance is <span class="math inline">\(s^2 = 10^2\)</span>, we need:</p>
+<p><span class="math display">\[ n = \frac{(1.96)^2 \cdot (10)^2}{3^2} = 42.7 \]</span></p>
+<p>or 43 people to estimate <span class="math inline">\(\mu\)</span> with 95% confidence. In general, when making sample size calculations such as this one, it is a good idea to change all of the factors to see what the “cost” in sample size is for achieving certain errors <span class="math inline">\(\epsilon\)</span> and confidence levels <span class="math inline">\((1 - \alpha)\)</span>. Doing that here, we get:</p>
+<p><img src="pictures/Picture7.png" alt="Empirical Rule Image 2" />
+we can also change the estimate of the variance. For example, if we change the sample variance to <span class="math inline">\(s^2=8^2\)</span>, then the necessary sample sizes for various errors ϵ and confidence levels (1− α) become:</p>
+<div class="figure">
+<img src="pictures/Picture8.png" alt="" />
+<p class="caption">Empirical Rule Image 2</p>
+</div>
+</div>
+</div>
+<div id="factors-affecting-the-sample-size" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Factors Affecting the Sample Size<a href="estimating-a-mean.html#factors-affecting-the-sample-size" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If we take a look back at the formula for the sample size:</p>
+<p><span class="math display">\[ n = \frac{(z_{(\alpha/2)}^2 \cdot s^2)}{\epsilon^2} \]</span></p>
+<p>we can make some generalizations about how each of three factors, namely the standard deviation <span class="math inline">\(s\)</span>, the confidence level <span class="math inline">\((1 - \alpha)100\%\)</span>, and the error <span class="math inline">\(\epsilon\)</span>, affect the necessary sample size.</p>
+<p>As the confidence level <span class="math inline">\((1 - \alpha)100\%\)</span> increases, the necessary sample size increases. That’s because as the confidence level increases, the <span class="math inline">\(Z\)</span>-value, which appears in the numerator of the formula, increases. Again, you can see an example of this generalization from some of the numbers generated in that last example.</p>
+<p>As the error <span class="math inline">\(\epsilon\)</span> decreases, the necessary sample size <span class="math inline">\(n\)</span> increases. That’s because the error epsilon term appears in the denominator. You can see an example of this generalization from some of the numbers generated in that last example.</p>
+<p><img src="pictures/Picture9.png" /></p>
+<p>As the sample standard deviation <span class="math inline">\(s\)</span> increases, the necessary sample size increases. That’s because the standard deviation <span class="math inline">\(s\)</span> appears in the numerator of the formula. Again, you can see an example of this generalization from some of the numbers generated in that last example.</p>
+<p><img src="pictures/Picture10.png" />
+As the sample standard deviation s increases, the necessary sample size increases. That’s because the standard deviation s appears in the numerator of the formula. Again, you can see an example of this generalization from some of the numbers generated in that last example:</p>
+<p><img src="pictures/Picture11.png" /></p>
+</div>
+<div id="estimating-a-proportion-for-a-large-population" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Estimating a Proportion for a Large Population<a href="estimating-a-mean.html#estimating-a-proportion-for-a-large-population" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Example</strong></p>
+<p>A pollster wants to estimate <span class="math inline">\(p\)</span>, the true proportion of all Americans favoring the Democratic candidate with 95% confidence and error <span class="math inline">\(\epsilon\)</span> no larger than 0.03.</p>
+<p>How many people should he randomly sample to achieve his goals?</p>
+<p><strong>Answer</strong></p>
+<p>We’ll tackle this problem just as we did for finding the sample size necessary to estimate a population mean. First, note that the pollster’s goal is to estimate the population proportion <span class="math inline">\(p\)</span> so that the error is no larger than 0.03. That is, the goal is to calculate a 95% confidence interval such that:</p>
+<p><span class="math display">\[ \hat{p} \pm \epsilon = \hat{p} \pm 0.03 \]</span></p>
+<p>But, we know the formula for a <span class="math inline">\((1 - \alpha)100\%\)</span> confidence interval for a population proportion is:</p>
+<p><span class="math display">\[ \hat{p} \pm z_{(\alpha/2)} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \]</span></p>
+<p>So, just as we did on the previous page, we’ll proceed by equating the terms appearing after each of the above <span class="math inline">\(\pm\)</span> signs, and solve for <span class="math inline">\(n\)</span>. That is, equate:</p>
+<p><span class="math display">\[ \epsilon = z_{(\alpha/2)} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \]</span></p>
+<p>and solve for <span class="math inline">\(n\)</span>. Multiplying through by the square root of <span class="math inline">\(n\)</span>, we get:</p>
+<p><span class="math display">\[ \sqrt{\epsilon \cdot n} = z_{(\alpha/2)} \sqrt{\hat{p}(1-\hat{p})} \]</span></p>
+<p>And, dividing through by <span class="math inline">\(\epsilon\)</span> and squaring both sides, we get:</p>
+<p><span class="math display">\[ n = \frac{z^2_{(\alpha/2)} (\hat{p}(1-\hat{p}))}{\epsilon^2} \]</span></p>
+<p>Again, before we make the calculation for our particular example, let’s take a step back and summarize the formula that we have just derived.</p>
+<div id="estimating-a-population-proportion-p" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Estimating a population proportion <span class="math inline">\(p\)</span><a href="estimating-a-mean.html#estimating-a-population-proportion-p" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The sample size necessary for estimating a population proportion <span class="math inline">\(p\)</span> of a large population with <span class="math inline">\((1-\alpha)100\%\)</span> confidence and error no larger than <span class="math inline">\(\epsilon\)</span> is:</p>
+<p><span class="math display">\[ n = \frac{z^2_{(\alpha/2)} (\hat{p}(1-\hat{p}))}{\epsilon^2} \]</span></p>
+<p>Just as we needed to have a decent estimate, <span class="math inline">\(s^2\)</span>, of the population variance when calculating the sample size necessary for estimating a population mean <span class="math inline">\(\mu\)</span>, we need to have a good estimate, <span class="math inline">\(\hat{p}\)</span>, of the population proportion when calculating the sample size necessary for estimating a population proportion <span class="math inline">\(p\)</span>. Strange, I know… but there are at least two ways out of this conundrum.</p>
+<div id="ways-to-determine-hatp1-hatp" class="section level4 hasAnchor" number="2.4.1.1">
+<h4><span class="header-section-number">2.4.1.1</span> Ways to Determine <span class="math inline">\(\hat{p}(1-\hat{p})\)</span><a href="estimating-a-mean.html#ways-to-determine-hatp1-hatp" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>You can use your prior knowledge (previous polls, perhaps?) about <span class="math inline">\(\hat{p}\)</span>.</li>
+<li>You can set <span class="math inline">\(\hat{p}(1-\hat{p}) = 1/4\)</span>, its maximum when <span class="math inline">\(\hat{p} = 1/2\)</span>.</li>
+</ul>
+<p><img src="pictures/Picture12.png" /></p>
+<p><strong>Example (Continued)</strong></p>
+<p>A pollster wants to estimate <span class="math inline">\(p\)</span>, the true proportion of all Americans favoring the Democratic candidate with 95% confidence and error <span class="math inline">\(\epsilon\)</span> no larger than 0.03. How many people should he randomly sample to achieve his goals?</p>
+<p><strong>Answer</strong></p>
+<p>If the maximum error <span class="math inline">\(\epsilon\)</span> is 0.03, and the sample proportion is 0.8, we need to survey:</p>
+<p><span class="math display">\[ n = \frac{(1.96)^2 (0.8)(0.2)}{0.03^2} = 682.95 \]</span></p>
+<p>or 683 people to estimate <span class="math inline">\(p\)</span> with 95% confidence. Again, when making sample size calculations such at this one, it is a good idea to change all of the factors to see what the “cost” is in sample size for achieving certain errors <span class="math inline">\(\epsilon\)</span> and confidence levels <span class="math inline">\((1-\alpha)\)</span>. Doing that here, we get:</p>
+<p><img src="pictures/Picture13.png" /></p>
+<p>We, of course, can also change the sample proportion. For example, if we change the sample proportion to 0.5, then we need to survey:</p>
+<p><span class="math display">\[ n = \frac{(1.96)^2 (0.5)(0.5)}{0.03^2} = 1067.1 \]</span></p>
+<p>or 1068 people to estimate <span class="math inline">\(p\)</span> with 95% confidence. The two calculations in this example illustrate how useful it is to have some idea of the magnitude of the sample proportion. In one case, if the proportion is close to 0.80, then we’d need as few as 680 people. On the other hand, if the proportion is close to 0.50, then we’d need as many as 1070 people. That difference in necessary sample size sure argues for a small pilot study in advance of the larger survey.</p>
+<p>By the way, just as we did for the case in which the sample proportion was 0.8, we can change the factors to see what the “cost” is in sample size for achieving certain errors <span class="math inline">\(\epsilon\)</span> and confidence levels <span class="math inline">\((1 - \alpha)\)</span>. Doing that here, we get:</p>
+<p><img src="pictures/Picture14.png" /></p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="test-of-hypothesis-for-efficiency.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/edit/main/Chapter-2.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/xadex01/Test_of_hypothesis/blob/main/Chapter-2.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

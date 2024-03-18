@@ -1,0 +1,140 @@
+# Test of Hypothesis for Efficiency
+
+## Introduction
+
+In statistics, hypothesis testing is a fundamental concept used to make inferences about population parameters based on sample data. One common application of hypothesis testing is assessing the efficiency of processes or systems. In this lecture, we will delve into the principles of hypothesis testing for efficiency, covering examples from binomial, Poisson, and normal distributions. Additionally, we will explore point and interval estimations to complement our understanding.
+
+## Hypothesis Testing Example: Binomial Distribution
+
+### How to do a Binomial Hypothesis Test
+
+1.  Define the parameter in the context of the question – for a binomial hypothesis test the parameter is $p$ which is always the probability of something.
+2.  Write down the null hypothesis and the alternate hypothesis.
+3.  Define the test statistic $X$ in the context of the question.
+4.  Write down the distribution of $X$ under the null hypothesis.
+5.  State the significance level $α$ – even though you are likely given it in the question, not stating it risks losing a mark.
+6.  Test for significance or find the critical region.
+7. Write a concluding sentence, linking the acceptance or rejection of $H_0$ to the context.
+
+
+**Example: Flipping a Coin**
+
+Let's say we are interested in the probability of getting heads exactly 3 times when flipping a fair coin 5 times. Here, \( n = 5 \) (number of trials) and \( p = 0.5 \) (probability of success, since the coin is fair).
+
+We can use the binomial probability formula to calculate this probability:
+
+\[ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k} \]
+
+where:
+
+-  \( X \) is the random variable representing the number of successes (heads in this case),
+-  \( k \) is the number of successes we're interested in (3 heads in this case),
+-  \( n \) is the total number of trials (5 flips),
+-  \( p \) is the probability of success on each trial (0.5 for a fair coin), and
+-  \( \binom{n}{k} \) represents the binomial coefficient, which calculates the number of ways to choose \( k \) successes out of \( n \) trials.
+
+
+**Example: Binomial Hypothesis Test**
+
+When Fatima buys lunch during a work day, there is a probability of 0.6 that the shop has her favourite sandwich in stock. 
+After only one sandwich being in stock in the last five days, she is certain the probability of sandwiches being in stock has decreased. 
+Test, at the 5% significance level, if Edith is correct.
+
+Define hypotheses:
+H0: p = 0.6
+H1: p < 0.6
+
+**Test statistic:** X is the number of sandwiches in stock over five days.
+Under H0: X ~ B(5, 0.6)
+
+Significance level: α = 0.05
+
+Calculate P(X ≤ 1) under H0
+\[P(X\le1)=0.0870 > 0.05\]
+
+
+Do not reject $H_0$. Insufficient evidence to suggest Fatima is correct.
+
+**Example 2**
+
+A disease is moving through a population. On Tuesday, it is believed that nationally around 6% of people have the disease. In the village of Hammerton,5 out of 200 residents have the disease. Test, at the 5% significance level if the prevalence of the disease differs in Hammerton compared to the rest of the country.
+
+**Solution**
+
+$p$ is the probability of having the disease.
+
+Define hypotheses:
+$H0$: p = 0.06
+$H_1$: p ≠ 0.06
+
+**Test statistic:** X is the number of people in Hammerton who have the disease.
+
+Under $H_0$: X ~ B(200, 0.06)
+
+Significance level: α = 0.05
+
+Two-tailed test so we are looking for a probability smaller than 0.05/2 = 0.025
+
+** Example 3**
+
+Given: $X \sim B(10,p)$.
+
+i)  Find the Critical Region for a 5% level one tail test on:
+
+-  Null hypothesis ($H_0$): $p = 0.49$
+-  Alternative hypothesis ($H_1$): $p < 0.49$
+
+ii) Efan observes $X=2$ while Lzzie observes $X=1$. Do they reach the same conclusion in a hypothesis test? 
+
+**Answer**
+i)  \[P(X=2)=0.0621>0.05\]
+\[P(X=1)=0.0126 < 0.05\]
+
+So 2 is not in the critical region while 1 is
+Hence, the critical region is $X=0,1$
+
+
+ii) They reach different conclusions.
+
+Efan observes a value that lies outside the critical region, so concludes that $H_0$ should not be rejected.
+
+Izzie observes a value that lies inside the critical region, so concludes that $H_0$should be rejected.
+
+
+**Example 3**
+
+A scientist is observing a colony of 20 bacteria. It is believed that the probability of a bacterium splitting is 0.32. If the scientist observes just 2 splitting bacteria, test at the 1% significance level if this believed probability is too high.
+
+**Answer**
+
+$p$ is the probability of a bacterium splitting.
+
+$H_0:p = 0.32$
+$H_1:p <0.32$
+
+Test statistic $X$ is the number of bacteria that split.
+Under $H_0: X \sim B(20,0.32)$
+Significance level: $\alpha = 0.01$
+
+$P(X≤2) = 0.0235 >0.01$
+Do not reject $H_0$. Insufficient evidence to suggest the probability of splitting is too high.
+
+## Hypothesis Testing with the Poisson Distribution
+
+Testing hypotheses with the Poisson distribution is very similar to testing them with the binomial distribution. If the probability is greater than α, the level of significance, then the null hypothesis is accepted. If it is less than α, we accepted the alternative hypothesis.
+
+**Example**
+An existing make of car is known to break down on average one and a half times per year. A new model is introduced and the manufacturer claims that this model is less likely to break down. Ten randomly selected cars break down a total of eight times within the first year. Test the manufacturer's claim at a 5% significance level.
+
+**Solution**
+Let X be the number of breakdowns of the new model of car in a year. Since we have an average rate and the data is discrete, we need to use a Poisson distribution. So X ~ Poisson(λ) with λ = 1.5. The null and alternative hypotheses will be:
+
+$H0: λ = 1.5$
+$H1: λ < 1.5$.
+
+We need to decide whether $P[X ≤ 8] < α$, where $α = 0.05$ is the significance level. Firstly, the expected number of breakdowns $λt = 1.5 × 10 = 15$. We use the cumulative tables with $λt = 15$ and $x = 8$ to see $P[X ≤ 8] = 0.0374$. 
+
+$P[X ≤ 8] = 0.0374 < 0.05 = α$ 
+
+so we accept the alternative hypothesis.  The average rate of breakdowns has decreased.
+
