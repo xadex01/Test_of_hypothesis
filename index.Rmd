@@ -257,7 +257,7 @@ We can find probabilities associated with values of \( \hat{p} \) by using:
 
 **Example**
 
-Referring back to a previous example, say we take a random sample of 500 Penn State students and find that 278 are from Pennsylvania. Can we conclude that the proportion is larger than 0.5? Is 0.556 (\( \frac{278}{500} \)) **much bigger than** 0.5? What is much bigger?
+Referring back to a previous example, say we take a random sample of 500 BSUG students and find that 278 are from Bauchi state. Can we conclude that the proportion is larger than 0.5? Is 0.556 (\( \frac{278}{500} \)) **much bigger than** 0.5? What is much bigger?
 
 **Answer:**
 
@@ -281,7 +281,6 @@ The \( z^* \) value we found in the above example is referred to as the test sta
 
 The sample statistic one uses to either reject \( H_0 \) (and conclude \( H_a \)) or fail to reject \( H_0 \).
 
-Certainly! Below is the RMarkdown code for the given text:
 
 ### Making a Decision
 
